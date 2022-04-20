@@ -1,0 +1,25 @@
+	<main>
+		<h1 class="h1-title">Sobre Nosotros</h1>
+		<article>
+			<section class="about-us-1">
+				<h2 class="h2-title">Dulce <span class="txt-pink">Capricho</span></h2>
+				<p class="description-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloribus commodi quo vero. Recusandae asperiores adipisci et facilis cumque alias sunt, repellendus impedit aperiam beatae deserunt corporis officia. Sed, nisi.
+				Nesciunt, eaque quis temporibus, voluptate itaque fuga voluptas voluptatum maxime commodi vel impedit alias soluta est id? Rem sed veniam, tenetur consectetur doloremque, voluptatibus itaque vitae animi iste, nisi commodi?
+				Exercitationem non, minus sed fugiat sit culpa atque similique laboriosam ipsum labore esse, expedita, necessitatibus inventore totam molestiae sequi architecto. Dolorem officia modi beatae sit, vitae provident ullam quis temporibus?
+				Dolores reprehenderit qui id saepe! Voluptatem maiores odio eveniet itaque doloremque? Quos velit aut doloremque veniam vero! Cumque delectus vitae quam cupiditate unde explicabo itaque provident praesentium, ipsam nemo fugiat.</p>
+			</section>
+			<section class="about-us-2">
+					<h3 class="h3-title h3-title--about-us">Conoce a nuestra  <span class="txt-pink">Pastelera</span>👩‍🍳</h3>
+					<div class="about-chef">
+							<div class="img-chef-container">
+								<img class="img-chef" src="../images/about-us-img/pastelera.jpg" alt="Pastelera">
+							</div>
+						<p class="description-2">
+						Ipsum molestias aut libero placeat consectetur facere Veniam illo beatae enim fugiat officia! Adipisci laborum harum architecto dicta explicabo inventore labore Voluptatibus quidem a recusandae illo tempore earum Similique error<br>
+						Lorem saepe laudantium veniam laudantium id, commodi? Magni rerum dolorem neque odit nostrum? Ipsam adipisci asperiores voluptatibus tenetur porro. Eos nihil provident nam enim doloremque Dolores reiciendis est nisi laborum<br>
+						Amet dolore natus eos obcaecati iusto Reiciendis at porro laborum aliquid est minima ipsum reprehenderit? Dolorum architecto libero soluta a et. Dolor iusto repellat facere perspiciatis expedita Beatae consequatur mollitia<br>
+						</p>
+					</div>
+			</section>
+		</article>
+	</main>
