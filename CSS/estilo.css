@@ -1413,6 +1413,10 @@ input::-webkit-inner-spin-button, input::-webkit-inner-spin-button{
     .header:hover {
         background: #E81C9A;
     }    
+
+    .container-logo {
+        width: 15%;
+    }
 }
 
 /*----------------DISPOSITIVOS EXTRA EXTRA GRANDES (COMPUTADORAS MAS GRANDES)--------------------------------------*/
@@ -1428,4 +1432,8 @@ input::-webkit-inner-spin-button, input::-webkit-inner-spin-button{
     .header:hover {
         background: #E81C9A;
     }    
+
+    .container-logo {
+        width: 15%;
+    }
 }
