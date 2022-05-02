@@ -1,102 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css"> 
-    <link rel="icon" href="../icon/d-c-123.ico">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Iconos -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Icono de la página -->
+	<link rel="icon" href="../icon/d-c-123.ico">
+	<!-- Tipografia -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Dancing+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Dancing+Script&display=swap"
+		rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- JS para el navToggle -->
 	<script defer src="../scripts/index.js"></script>
-    <title>Dulce Capricho</title>
+	<!-- Boostrap -->
+	<link rel="stylesheet" href="../CSS/bootstrap.min.css" crossorigin="anonymous">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+	<title>Dulce Capricho</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
+	<!-- Header y Nav inicio -->
+	<header class="header">
+		<nav class="navbar navbar-expand-md bg-light">
+			<!-- Icono de Dulce Capricho inicio -->
 			<div class="container-logo">
-				<a href="../index.html"><img src="../icon/d-c12.png" alt="Dulce Capricho" class="logo"></a>
+				<a href="../index.html"><img src="../icon/d-c12.png" alt="Dulce Capricho" class="logo navbar-brand"></a>
 			</div>
-			<button class="nav__toggle">
-				<i class="fa-solid fa-bars"></i>
+			<!-- Icono de Dulce Capricho fin -->
+			<!-- NavBar inicio-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+				id="btn-color" onclick="btnChanger()">
+				<i class="nav__toggle fa-solid fa-bars"></i>
 			</button>
-            <ul class="nav__menu">
-                <li class="nav__menu-item"><a href="../index.html" class="nav__menu-link nav__menu-link--mdf">Inicio</a></li>
-                <li class="nav__menu-item"><a href="productos.html" class="nav__menu-link nav__menu-link--mdf">Productos</a></li>
-                <li class="nav__menu-item"><a href="sobre-nosotros.html" class="nav__menu-link nav__menu-link--mdf">Sobre Nosotros</a></li>
-                <li class="nav__menu-item"><a href="mi-cuenta.html" class="nav__menu-link nav__menu-link--mdf">Mi cuenta</a></li>
-                <li class="nav__menu-item"><a href="compras.html" class="nav__menu-link nav__menu-link--mdf">Compras</a></li>
-                <li class="nav__menu-item"><a href="contacto.html" class="nav__menu-link nav__menu-link--active">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-	
+			<!-- NavBar fin-->
+			<!-- navEnlaces inicio-->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="nav navbar-nav nav--display">
+					<li class="nav-item nav-item--position">
+						<a href="../index.html" class="nav-link nav__menu-link nav__menu-link--mdf">Inicio</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="./productos.html" class="nav-link nav__menu-link nav__menu-link--mdf">Productos</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="./sobre-nosotros.html" class="nav-link nav__menu-link nav__menu-link--mdf">Sobre
+							Nosotros</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="./mi-cuenta.html" class="nav-link nav__menu-link nav__menu-link--mdf">Mi cuenta</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="./compras.html" class="nav-link nav__menu-link nav__menu-link--mdf">Compras</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="./contacto.html" class="nav-link nav__menu-link nav__menu-link--active">Contacto</a>
+					</li>
+				</ul>
+			</div>
+			<!-- navEnlaces fin -->
+		</nav>
+	</header>
+	<!-- Header y Nav fin -->
+
 	<section>
-		<div class="bann-container">
-			<img src="../images/banners/contacto.001.jpg" alt="" class="bann__img">
+		<div class="hero-container">
+			<img src="../images/banners/contacto.001.jpg" alt="" class="hero__img">
 		</div>
 	</section>
-
+	
+	<!-- main inicio -->
 	<main>
 		<h1 class="h1-title">Contacto</h1>
-		<section class="form">
-			<form action="" method="post">
-				<h2 class="form-leyend">Contáctanos</h2>
-				<fieldset class="field-none">
-					<label class="form__label" for="">Nombre</label>
-					<input class="form__input" type="text" placeholder="Nombre" required>
-					<br>
-					<label class="form__label" for="">Apellido</label>
-					<input class="form__input" type="text" placeholder="Apellido" required>
-					<br>
-					<label class="form__label" for="email">Email</label>
-					<input class="form__input" type="mail" name="email" placeholder="Email" required>
-					<br>
-					<label class="form__label" for="">Teléfono (opcional)</label>
-					<input class="form__input" type="number" placeholder="Teléfono">
-					<br>
-					<label class="form__label" for="comentarios">Comentarios</label>
-					<br>
-					<textarea id="comentarios" class="form__input-text-area" name="comentarios" cols="30" rows="5" placeholder="Mensaje"></textarea>
-					<br>
-					<br>
+
+		<!-- sección 1 inicio -->
+		<section class="container-fluid">
+			<form action="#" method="post" class="form">
+				<h2 class="form-leyend">Contactanos</h2>
+				<div class="form-group container">
+					<input type="text" class="form-control form__input" placeholder="Nombre" name="name">
+				</div>
+				<div class="form-group container">
+					<input type="text" class="form-control form__input" placeholder="Apellido" name="name">
+				</div>
+				<div class="form-group container">
+					<input type="text" class="form-control form__input" id="email" placeholder="Email" name="email">
+				</div>
+				<div class="form-group container">
+					<input type="number" class="form-control form__input" placeholder="Teléfono" name="number">
+				</div>
+				<div class="form-group container">
+					<textarea id="comentarios" class="form-control form__input form__input-text-area " name="comentarios" cols="30" rows="5" placeholder="Mensaje"></textarea>
+				</div>
+				<div class="text-center">
 					<input class="form__btn" type="submit">
 					<input class="form__btn" type="reset" value="Borrar">
-				</fieldset>
+				</div>
 			</form>
 		</section>
-		<section class="contac-banner-two">
-			
-			<div class="map-container">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7827.796611697065!2d-58.88044343163251!3d-34.42210506547466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x153a2a7c470b5df4!2sDulce%20Capricho!5e0!3m2!1ses!2sar!4v1649185353909!5m2!1ses!2sar" width="525" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+		<!-- sección 1 fin -->
+
+		<!-- sección 2 inicio -->
+		<section class="contac-banner-two container-fluid">
+			<!-- mapa inicio -->
+			<div class="map-container col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7827.796611697065!2d-58.88044343163251!3d-34.42210506547466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x153a2a7c470b5df4!2sDulce%20Capricho!5e0!3m2!1ses!2sar!4v1649185353909!5m2!1ses!2sar"
+					width="525" height="425" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 			</div>
-			<div class="more-info-container">
+			<!-- mapa fin -->
+			<!-- mas info inicio -->
+			<div class="more-info-container col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
 				<h2 class="h2-title h2-title--contac">Más información</h2>
-				<div class="inf-item">
-					<h3 class="h3-title h3-title--contac">Ubicacion <a href="https://www.google.com.ar/maps/dir//Dulce+Capricho,+Chacabuco+1589,+B1631+Pilar,+Provincia+de+Buenos+Aires/@-34.4221051,-58.8804434,15.75z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bc9d1f2970686f:0x153a2a7c470b5df4!2m2!1d-58.8762755!2d-34.4192003!3e0?hl=es&authuser=0"><img src="../icon/mp-001.png" class="map-icon" alt=""></a></h3>
-					<p class="p-inf-item">Chacabuco 1589, 1631 Villa Rosa - Pilar, Buenos Aires, Argentina</p>
-				</div>
-				<div class="inf-item">
-					<h3 class="h3-title h3-title--contac">Horarios 🕘</h3>
-					<p class="p-inf-item p-inf-item--lh">
-						Domingo a Jueves de 10:00 a 22:00 Hs. 
-						<br>
-						Viernes y Sabado Cerrado
-					</p>
+				<div class="inf-item_container">
+					<div class="inf-item">
+						<h3 class="h3-title h3-title--contac">Ubicacion <a
+								href="https://www.google.com.ar/maps/dir//Dulce+Capricho,+Chacabuco+1589,+B1631+Pilar,+Provincia+de+Buenos+Aires/@-34.4221051,-58.8804434,15.75z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bc9d1f2970686f:0x153a2a7c470b5df4!2m2!1d-58.8762755!2d-34.4192003!3e0?hl=es&authuser=0"><img
+									src="../icon/mp-001.png" class="map-icon" alt=""></a></h3>
+						<p class="p-inf-item">Chacabuco 1589, 1631 Villa Rosa - Pilar, Buenos Aires, Argentina</p>
+					</div>
+					<div class="inf-item">
+						<h3 class="h3-title h3-title--contac">Horarios 🕘</h3>
+						<p class="p-inf-item p-inf-item--lh">
+							Domingo a Jueves de 10:00 a 22:00 Hs.
+							<br>
+							Viernes y Sabado Cerrado
+						</p>
+					</div>
 				</div>
 			</div>
+			<!-- mas info fin -->
 		</section>
-    </main>
+		<!-- sección 2 fin -->
+	</main>
+	<!-- main fin -->
 
 	<section>
 		<a href="#"><img src="../icon/whatsapp.png" alt="" class="icono contact"></a>
 	</section>
 
-    <footer class="footer">
+	<footer class="footer">
 		<div class="colum1">
 			<h4 class="colum-footer__title">Redes<span class="emoji">🔥</span></h4>
 			<div class="row row--redes">
@@ -107,10 +158,12 @@
 		<div class="colum2">
 			<h4 class="colum-footer__title">Ayuda<span></span></h4>
 			<ul>
-				<li class="row"><a href="./ayuda/terminos-y-condiciones.html"class="help-link colum-footer__text" >Terminos y Condiciones</a></li>
-				<li class="row"><a href="./ayuda/politica-de-privacidad.html" class="help-link colum-footer__text">Politica de Privacidad</a></li>
-				<li class="row"><a href="./ayuda/cookies.html" class="help-link colum-footer__text" >Cookies</a></li>
-				<li class="row"><a href="./ayuda/creditos.html"class="help-link colum-footer__text" >Creditos</a></li>
+				<li class="row"><a href="./ayuda/terminos-y-condiciones.html"
+						class="help-link colum-footer__text">Terminos y Condiciones</a></li>
+				<li class="row"><a href="./ayuda/politica-de-privacidad.html"
+						class="help-link colum-footer__text">Politica de Privacidad</a></li>
+				<li class="row"><a href="./ayuda/cookies.html" class="help-link colum-footer__text">Cookies</a></li>
+				<li class="row"><a href="./ayuda/creditos.html" class="help-link colum-footer__text">Creditos</a></li>
 			</ul>
 		</div>
 		<div class="colum3">
@@ -126,6 +179,16 @@
 		</div>
 	</footer>
 
+	<!-- Scripts de Bootstrap + Librerias -->
+	<script src="../scripts/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="../scripts/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="../scripts/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+	</script>
 </body>
-</html>
 
+</html>
