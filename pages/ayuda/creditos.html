@@ -1,39 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="../../CSS/estilo.css"> 
-    <link rel="stylesheet" type="text/css" href="../../CSS/normalize.css">
-    <link rel="icon" href="../../icon/d-c-123.ico">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Iconos -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Icono de la página -->
+	<link rel="icon" href="../../icon/d-c-123.ico">
+	<!-- Tipografia -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Dancing+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Dancing+Script&display=swap"
+		rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- JS para el navToggle -->
 	<script defer src="../../scripts/index.js"></script>
-    <title>Dulce Capricho</title>
+	<!-- Boostrap -->
+	<link rel="stylesheet" href="../../CSS/bootstrap.min.css" crossorigin="anonymous">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../CSS/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/normalize.css">
+	<!-- Titulo -->
+	<title>Dulce Capricho</title>
 </head>
 
 <body>
+	<!-- Header y Nav inicio -->
 	<header class="header">
-        <nav class="nav">
+		<nav class="navbar navbar-expand-md bg-light">
+			<!-- Icono de Dulce Capricho inicio -->
 			<div class="container-logo">
 				<a href="../../index.html"><img src="../../icon/d-c12.png" alt="Dulce Capricho" class="logo"></a>
 			</div>
-			<button class="nav__toggle">
-				<i class="fa-solid fa-bars"></i>
+			<!-- Icono de Dulce Capricho fin -->
+			<!-- NavBar inicio-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+				id="btn-color" onclick="btnChanger()">
+				<i class="nav__toggle fa-solid fa-bars"></i>
 			</button>
-            <ul class="nav__menu">
-                <li class="nav__menu-item"><a href="../../index.html" class=" nav__menu-link nav__menu-link--mdf">Inicio</a></li>
-                <li class="nav__menu-item"><a href="../productos.html" class="nav__menu-link nav__menu-link--mdf" >Productos</a></li>
-                <li class="nav__menu-item"><a href="../sobre-nosotros.html" class="nav__menu-link nav__menu-link--mdf">Sobre Nosotros</a></li>
-                <li class="nav__menu-item"><a href="../mi-cuenta.html" class="nav__menu-link nav__menu-link--mdf">Mi cuenta</a></li>
-                <li class="nav__menu-item"><a href="../compras.html" class="nav__menu-link nav__menu-link--mdf">Compras</a></li>
-                <li class="nav__menu-item"><a href="../contacto.html" class="nav__menu-link nav__menu-link--mdf">Contacto</a></li>
-            </ul>
+			<!-- NavBar fin-->
+			<!-- navEnlaces inicio-->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="nav navbar-nav nav--display">
+					<li class="nav-item nav-item--position">
+						<a href="../../index.html" class="nav-link nav__menu-link nav__menu-link--mdf">Inicio</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../productos.html" class="nav-link nav__menu-link nav__menu-link--mdf">Productos</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../sobre-nosotros.html" class="nav-link nav__menu-link nav__menu-link--mdf">Sobre Nosotros</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../mi-cuenta.html" class="nav-link nav__menu-link nav__menu-link--mdf">Mi cuenta</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../compras.html" class="nav-link nav__menu-link nav__menu-link--mdf">Compras</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../contacto.html" class="nav-link nav__menu-link nav__menu-link--mdf">Contacto</a>
+					</li>
+				</ul>
+			</div>
+			<!-- navEnlaces fin -->
 		</nav>
-    </header>
+	</header>
+	<!-- Header y Nav fin -->
 
     <main>
 		<article>

@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="../../CSS/estilo.css"> 
-    <link rel="stylesheet" type="text/css" href="../../CSS/normalize.css">
-    <link rel="icon" href="../../icon/d-c-123.ico">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Iconos -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Icono de la página -->
+	<link rel="icon" href="../../icon/d-c-123.ico">
+	<!-- Tipografia -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Dancing+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Dancing+Script&display=swap"
+		rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- JS para el navToggle -->
 	<script defer src="../../scripts/index.js"></script>
-    <title>Dulce Capricho</title>
+	<!-- Boostrap -->
+	<link rel="stylesheet" href="../../CSS/bootstrap.min.css" crossorigin="anonymous">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../CSS/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/normalize.css">
+	<!-- Titulo -->
+	<title>Dulce Capricho</title>
 </head>
 
 <body>
+	<!-- Header y Nav inicio -->
 	<header class="header">
-        <nav class="nav">
+		<nav class="navbar navbar-expand-md bg-light">
+			<!-- Icono de Dulce Capricho inicio -->
 			<div class="container-logo">
 				<a href="../../index.html"><img src="../../icon/d-c12.png" alt="Dulce Capricho" class="logo"></a>
 			</div>
-			<button class="nav__toggle">
-				<i class="fa-solid fa-bars"></i>
+			<!-- Icono de Dulce Capricho fin -->
+			<!-- NavBar inicio-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+				id="btn-color" onclick="btnChanger()">
+				<i class="nav__toggle fa-solid fa-bars"></i>
 			</button>
-            <ul class="nav__menu">
-                <li class="nav__menu-item"><a href="../../index.html" class=" nav__menu-link nav__menu-link--mdf">Inicio</a></li>
-                <li class="nav__menu-item"><a href="../productos.html" class="nav__menu-link nav__menu-link--mdf" >Productos</a></li>
-                <li class="nav__menu-item"><a href="../sobre-nosotros.html" class="nav__menu-link nav__menu-link--mdf">Sobre Nosotros</a></li>
-                <li class="nav__menu-item"><a href="../mi-cuenta.html" class="nav__menu-link nav__menu-link--mdf">Mi cuenta</a></li>
-                <li class="nav__menu-item"><a href="../compras.html" class="nav__menu-link nav__menu-link--mdf">Compras</a></li>
-                <li class="nav__menu-item"><a href="../contacto.html" class="nav__menu-link nav__menu-link--mdf">Contacto</a></li>
-            </ul>
+			<!-- NavBar fin-->
+			<!-- navEnlaces inicio-->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="nav navbar-nav nav--display">
+					<li class="nav-item nav-item--position">
+						<a href="../../index.html" class="nav-link nav__menu-link nav__menu-link--mdf">Inicio</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../productos.html" class="nav-link nav__menu-link nav__menu-link--mdf">Productos</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../sobre-nosotros.html" class="nav-link nav__menu-link nav__menu-link--mdf">Sobre
+							Nosotros</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../mi-cuenta.html" class="nav-link nav__menu-link nav__menu-link--mdf">Mi cuenta</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../compras.html" class="nav-link nav__menu-link nav__menu-link--mdf">Compras</a>
+					</li>
+					<li class="nav-item nav-item--position">
+						<a href="../contacto.html" class="nav-link nav__menu-link nav__menu-link--mdf">Contacto</a>
+					</li>
+				</ul>
+			</div>
+			<!-- navEnlaces fin -->
 		</nav>
-    </header>
+	</header>
+	<!-- Header y Nav fin -->
 
 	<main>
 		<h1 class="h1-title">Politica de Privacidad</h1>
 		<p class="description-1 description-help">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsam explicabo recusandae maiores inventore. Recusandae consequuntur sequi veritatis consequatur praesentium ut ratione blanditiis. Dignissimos autem accusamus sunt minus, quidem consectetur.
-			Veritatis asperiores, dolores ullam in vero alias accusantium quibusdam nobis ducimus, non tempora. Quasi facilis cupiditate nesciunt fugiat quod dolorum amet. Error incidunt ipsam deleniti doloribus et, delectus quas commodi.
-			Beatae laborum nisi magnam incidunt provident qui excepturi architecto repellat vero rerum alias quibusdam ut quasi est deserunt, et consectetur facere eos soluta aliquid? Itaque voluptate dolorum non perferendis. Temporibus.
-			Adipisci quam temporibus accusamus fugit nostrum alias porro repellendus obcaecati, nulla suscipit consequuntur commodi omnis sapiente praesentium quaerat ratione cum minima voluptatibus velit non, error corrupti a. Repellendus, eius fuga!
-			Beatae eaque unde aperiam repudiandae ipsa cum quia odio, aliquid explicabo esse vel minus. Dolores placeat cupiditate ullam voluptatem consequatur dolore deserunt nam iusto adipisci voluptates. Animi fugit deserunt fuga?
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsam explicabo recusandae maiores
+			inventore. Recusandae consequuntur sequi veritatis consequatur praesentium ut ratione blanditiis.
+			Dignissimos autem accusamus sunt minus, quidem consectetur.
+			Veritatis asperiores, dolores ullam in vero alias accusantium quibusdam nobis ducimus, non tempora. Quasi
+			facilis cupiditate nesciunt fugiat quod dolorum amet. Error incidunt ipsam deleniti doloribus et, delectus
+			quas commodi.
+			Beatae laborum nisi magnam incidunt provident qui excepturi architecto repellat vero rerum alias quibusdam
+			ut quasi est deserunt, et consectetur facere eos soluta aliquid? Itaque voluptate dolorum non perferendis.
+			Temporibus.
+			Adipisci quam temporibus accusamus fugit nostrum alias porro repellendus obcaecati, nulla suscipit
+			consequuntur commodi omnis sapiente praesentium quaerat ratione cum minima voluptatibus velit non, error
+			corrupti a. Repellendus, eius fuga!
+			Beatae eaque unde aperiam repudiandae ipsa cum quia odio, aliquid explicabo esse vel minus. Dolores placeat
+			cupiditate ullam voluptatem consequatur dolore deserunt nam iusto adipisci voluptates. Animi fugit deserunt
+			fuga?
 		</p>
 	</main>
 
@@ -50,41 +96,48 @@
 		<a href="#"><img src="../../icon/whatsapp.png" alt="" class="icono contact"></a>
 	</section>
 
-    <footer class="footer">
-			<div class="colum1">
-				<h4 class="colum-footer__title">Redes<span class="emoji">🔥</span></h4>
-				<div class="row row--redes">
-					<a href="#"><img src="../../icon/facebook.png" class="icono icon-foot"></a>
-					<a href="#"><img src="../../icon/instagram.png" class="icono icon-foot"></a>
-				</div>
+	<footer class="footer">
+		<div class="colum1">
+			<h4 class="colum-footer__title">Redes<span class="emoji">🔥</span></h4>
+			<div class="row row--redes">
+				<a href="#"><img src="../../icon/facebook.png" class="icono icon-foot"></a>
+				<a href="#"><img src="../../icon/instagram.png" class="icono icon-foot"></a>
 			</div>
-			<div class="colum2">
-				<h4 class="colum-footer__title">Ayuda<span></span></h4>
-				<ul>
-					<li class="row"><a href="terminos-y-condiciones.html"class="help-link colum-footer__text" >Terminos y Condiciones</a></li>
-					<li class="row"><a href="politica-de-privacidad.html" class="help-link colum-footer__text">Politica de Privacidad</a></li>
-					<li class="row"><a href="cookies.html" class="help-link colum-footer__text" >Cookies</a></li>
-					<li class="row"><a href="creditos.html"class="help-link colum-footer__text" >Creditos</a></li>
-				</ul>
+		</div>
+		<div class="colum2">
+			<h4 class="colum-footer__title">Ayuda<span></span></h4>
+			<ul>
+				<li class="row"><a href="terminos-y-condiciones.html" class="help-link colum-footer__text">Terminos y
+						Condiciones</a></li>
+				<li class="row"><a href="politica-de-privacidad.html" class="help-link colum-footer__text">Politica de
+						Privacidad</a></li>
+				<li class="row"><a href="cookies.html" class="help-link colum-footer__text">Cookies</a></li>
+				<li class="row"><a href="creditos.html" class="help-link colum-footer__text">Creditos</a></li>
+			</ul>
+		</div>
+		<div class="colum3">
+			<h4 class="colum-footer__title">Contacto</h4>
+			<div class="row">
+				<i class="fa-solid fa-envelope icon-contac--foot"></i>
+				<label class="colum-footer__text">info@dulcecapricho.com</label>
 			</div>
-			<div class="colum3">
-				<h4 class="colum-footer__title">Contacto</h4>
-				<div class="row">
-					<i class="fa-solid fa-envelope icon-contac--foot"></i>
-					<label class="colum-footer__text">info@dulcecapricho.com</label>
-				</div>
-				<div class="row">
-					<i class="fa-solid fa-phone icon-contac--foot"></i>
-					<label class="colum-footer__text">(+54) 11 0000-0000</label>
-				</div>
+			<div class="row">
+				<i class="fa-solid fa-phone icon-contac--foot"></i>
+				<label class="colum-footer__text">(+54) 11 0000-0000</label>
 			</div>
-    </footer>
+		</div>
+	</footer>
 
 	<!-- Scripts de Bootstrap + Librerias -->
-	<script src="../../scripts/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="../../scripts/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="../../scripts/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+	<script src="../../scripts/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="../../scripts/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
+	<script src="../../scripts/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+	</script>
 </body>
+
 </html>
-
-

@@ -195,6 +195,7 @@ body {
 
 .help-link:hover {
     color: #fff;
+    text-decoration: none;
 }
 
 .colum3{
@@ -216,7 +217,7 @@ body {
 }
 
 .colum-footer__text {
-    font-size: 1.1rem;
+    font-size: x-large;
 }
 
 
@@ -1308,7 +1309,8 @@ input::-webkit-inner-spin-button, input::-webkit-inner-spin-button{
 
 /*------------------------DISPOSITIVOS GRANDES (COMPUTADORAS) "lg"--------------------- */
 @media only screen and (min-width: 992px) and (max-width:1199.98px) {
-     /* --------------------MQ-NAV---------------- */
+     /* --------------------MQ-GENERAL---------------- */
+     /* nav inicio */
     .header {
         height: 120px;
         transition-property: background;
@@ -1330,7 +1332,8 @@ input::-webkit-inner-spin-button, input::-webkit-inner-spin-button{
     .logo:hover {
         filter: hue-rotate(40deg);
     }
-    
+    /* nav fin */
+    /*  */
     .contact {
         right: 7px;
         bottom: 7vh;
@@ -1347,7 +1350,7 @@ input::-webkit-inner-spin-button, input::-webkit-inner-spin-button{
 
     /* enlaces fin */
 
-    /* --------------MQ-Footer--------------- */
+    /* footer inicio */
     .colum-footer__title {
         font-size: 1.5rem;
         padding-bottom: 0.6rem;
@@ -1358,8 +1361,10 @@ input::-webkit-inner-spin-button, input::-webkit-inner-spin-button{
     }
 
     .colum-footer__text {
-        font-size: 0.9rem;
+        font-size: large;
     }
+
+    /* footer fin */
 
     /* TITULOS */
 
