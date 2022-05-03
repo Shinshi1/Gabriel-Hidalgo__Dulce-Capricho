@@ -20,6 +20,8 @@
 	<script defer src="./scripts/index.js"></script>
 	<!-- Boostrap -->
 	<link rel="stylesheet" href="CSS/bootstrap.min.css" crossorigin="anonymous">
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Css -->
 	<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
 	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
@@ -82,7 +84,7 @@
 	<main>
 		<h1 class="h1-title">Inicio</h1>
 		<!-- Seccion 1 inicio -->
-		<h2 class="h2-title h2-title--index">Pedidos Entregados💝</h2>
+		<h2 class="h2-title h2-title--index" data-aos="flip-left">Pedidos Entregados💝</h2>
 		<section>
 			<!-- Carrusel inicio -->
 			<div id="entregados" class="carousel slide" data-ride="carousel">
@@ -128,26 +130,32 @@
 		</section>
 		<!-- Seccion 1 fin -->
 		<!-- Seccion 2 inicio -->
-		<h2 class="h2-title h2-title--index-2">Te recomendamos...</h2>
+		<h2 class="h2-title h2-title--index-2" data-aos="flip-left">Te recomendamos...</h2>
 		<section class="recomendados">
 			<div class="img-container">
 				<div class="img-item img-item1">
-					<img src="images/products/postre-009.jpg" alt="postre" class=" img">
+					<img src="images/products/postre-009.jpg" alt="postre" class=" img" data-aos="flip-left"
+						data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 				</div>
 				<div class="img-item img-item2">
-					<img src="images/products/lemon-pie-012.jpg" alt="lemon pie" class="img">
+					<img src="images/products/lemon-pie-012.jpg" alt="lemon pie" class="img" data-aos="flip-left"
+						data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 				</div>
 				<div class="img-item img-item3">
-					<img src="images/products/postre-010.jpg" alt="Imagen de postre" class="img">
+					<img src="images/products/postre-010.jpg" alt="Imagen de postre" class="img" data-aos="flip-left"
+						data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 				</div>
 				<div class="img-item img-item4">
-					<img src="images/products/postre-02.jpg" alt="Imagen de postre" class="img">
+					<img src="images/products/postre-02.jpg" alt="Imagen de postre" class="img" data-aos="flip-left"
+						data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 				</div>
 				<div class="img-item img-item5">
-					<img src="images/products/postre-03.jpg" alt="Imagen de postre" class="img">
+					<img src="images/products/postre-03.jpg" alt="Imagen de postre" class="img" data-aos="flip-left"
+						data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 				</div>
 				<div class="img-item img-item6">
-					<img src="images/products/postre-06.jpg" alt="Imagen de postre" class="img">
+					<img src="images/products/postre-06.jpg" alt="Imagen de postre" class="img" data-aos="flip-left"
+						data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 				</div>
 			</div>
 		</section>
@@ -205,6 +213,12 @@
 	</footer>
 	<!-- Footer fin -->
 
+
+	<!-- Scripts de AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 	<!-- Scripts de Bootstrap + Librerias inicio -->
 	<script src="./scripts/jquery.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
