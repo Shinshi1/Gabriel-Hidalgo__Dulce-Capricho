@@ -20,6 +20,9 @@
 	<script defer src="../scripts/index.js"></script>
 	<!-- Boostrap -->
 	<link rel="stylesheet" href="../CSS/bootstrap.min.css" crossorigin="anonymous">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../CSS/animate.min.css">
+	</script>
 	<!-- Css -->
 	<link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
@@ -31,7 +34,7 @@
 	<header class="header">
 		<nav class="navbar navbar-expand-md bg-light">
 			<!-- Icono de Dulce Capricho inicio -->
-			<div class="container-logo">
+			<div class="container-logo animate__animated animate__heartBeat animate__delay-1s">
 				<a href="../index.html"><img src="../icon/d-c12.png" alt="Dulce Capricho" class="logo navbar-brand"></a>
 			</div>
 			<!-- Icono de Dulce Capricho fin -->
@@ -70,15 +73,17 @@
 	</header>
 	<!-- Header y Nav fin -->
 
-	<section>
+	<!-- Hero inicio -->
+	<section class="jumbotron jumbotron-fluid">
 		<div class="hero-container">
 			<img src="../images/banners/contacto.001.jpg" alt="" class="hero__img">
 		</div>
 	</section>
-	
+	<!-- Hero fin -->
+
 	<!-- main inicio -->
 	<main>
-		<h1 class="h1-title">Contacto</h1>
+		<h1 class="h1-title wow animate__animated animate__backInDown">Contacto</h1>
 
 		<!-- sección 1 inicio -->
 		<section class="container-fluid">
@@ -97,7 +102,8 @@
 					<input type="number" class="form-control form__input" placeholder="Teléfono" name="number">
 				</div>
 				<div class="form-group container">
-					<textarea id="comentarios" class="form-control form__input form__input-text-area " name="comentarios" cols="30" rows="5" placeholder="Mensaje"></textarea>
+					<textarea id="comentarios" class="form-control form__input form__input-text-area "
+						name="comentarios" cols="30" rows="5" placeholder="Mensaje"></textarea>
 				</div>
 				<div class="text-center">
 					<input class="form__btn" type="submit">
@@ -147,7 +153,7 @@
 		<a href="#"><img src="../icon/whatsapp.png" alt="" class="icono contact"></a>
 	</section>
 
-	<footer class="footer">
+	<footer class="footer wow animate__animated animate__slideInUp">
 		<div class="colum1">
 			<h4 class="colum-footer__title">Redes<span class="emoji">🔥</span></h4>
 			<div class="row row--redes">
@@ -179,6 +185,11 @@
 		</div>
 	</footer>
 
+	<!-- Scripts de WOW -->
+	<script src="../scripts/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 	<!-- Scripts de Bootstrap + Librerias -->
 	<script src="../scripts/jquery.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

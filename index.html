@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="CSS/bootstrap.min.css" crossorigin="anonymous">
 	<!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="./CSS/animate.min.css">
 	<!-- Css -->
 	<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
 	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
@@ -33,7 +35,7 @@
 	<header class="header">
 		<nav class="navbar navbar-expand-md bg-light">
 			<!-- Icono de Dulce Capricho inicio -->
-			<div class="container-logo">
+			<div class="container-logo animate__animated animate__heartBeat animate__delay-1s">
 				<a href="#"><img src="./icon/d-c12.png" alt="Dulce Capricho" class="logo navbar-brand"></a>
 			</div>
 			<!-- Icono de Dulce Capricho fin -->
@@ -82,7 +84,7 @@
 
 	<!-- Main inicio -->
 	<main>
-		<h1 class="h1-title">Inicio</h1>
+		<h1 class="h1-title wow animate__animated animate__backInDown">Inicio</h1>
 		<!-- Seccion 1 inicio -->
 		<h2 class="h2-title h2-title--index" data-aos="flip-left">Pedidos Entregados💝</h2>
 		<section>
@@ -170,7 +172,7 @@
 	<!-- logo de WhatsApp fin -->
 
 	<!-- Footer inicio -->
-	<footer class="footer">
+	<footer class="footer wow animate__animated animate__slideInUp">
 		<!-- Redes inicio-->
 		<div class="colum1">
 			<h4 class="colum-footer__title">Redes<span class="emoji">🔥</span></h4>
@@ -183,7 +185,7 @@
 		<!-- Ayuda inicio -->
 		<div class="colum2">
 			<h4 class="colum-footer__title">Ayuda<span></span></h4>
-			<!-- Enlaces ayuda footer inicio -->
+			<!-- Enlaces ayuda inicio -->
 			<ul>
 				<li class="row"><a href="./pages/ayuda/terminos-y-condiciones.html"
 						class="help-link colum-footer__text">Terminos y Condiciones</a></li>
@@ -194,7 +196,7 @@
 				<li class="row"><a href="./pages/ayuda/creditos.html" class="help-link colum-footer__text">Creditos</a>
 				</li>
 			</ul>
-			<!-- Enlaces ayuda footer inicio -->
+			<!-- Enlaces ayuda fin -->
 		</div>
 		<!-- Ayuda fin -->
 		<!-- Contacto inicio -->
@@ -219,6 +221,11 @@
 	<script>
 		AOS.init();
 	</script>
+	<!-- Scripts de WOW -->
+	<script src="./scripts/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 	<!-- Scripts de Bootstrap + Librerias inicio -->
 	<script src="./scripts/jquery.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

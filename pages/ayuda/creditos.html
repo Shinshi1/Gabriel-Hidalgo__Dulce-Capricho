@@ -19,6 +19,8 @@
 	<script defer src="../../scripts/index.js"></script>
 	<!-- Boostrap -->
 	<link rel="stylesheet" href="../../CSS/bootstrap.min.css" crossorigin="anonymous">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../../CSS/animate.min.css">
 	<!-- Css -->
 	<link rel="stylesheet" type="text/css" href="../../CSS/estilo.css">
 	<link rel="stylesheet" type="text/css" href="../../CSS/normalize.css">
@@ -31,7 +33,7 @@
 	<header class="header">
 		<nav class="navbar navbar-expand-md bg-light">
 			<!-- Icono de Dulce Capricho inicio -->
-			<div class="container-logo">
+			<div class="container-logo animate__animated animate__heartBeat animate__delay-1s">
 				<a href="../../index.html"><img src="../../icon/d-c12.png" alt="Dulce Capricho" class="logo"></a>
 			</div>
 			<!-- Icono de Dulce Capricho fin -->
@@ -89,7 +91,7 @@
 		<a href="#"><img src="../../icon/whatsapp.png" alt="" class="icono contact"></a>
 	</section>
 
-	<footer class="footer">
+	<footer class="footer wow animate__animated animate__slideInUp">
 		<div class="colum1">
 			<h4 class="colum-footer__title">Redes<span class="emoji">🔥</span></h4>
 			<div class="row row--redes">
@@ -119,6 +121,11 @@
 		</div>
 	</footer>
 
+	<!-- Scripts de WOW -->
+	<script src="../../scripts/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 	<!-- Scripts de Bootstrap + Librerias -->
 	<script src="../../scripts/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="../../scripts/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
