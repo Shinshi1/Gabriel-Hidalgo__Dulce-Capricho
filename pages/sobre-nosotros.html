@@ -13,9 +13,11 @@
 	<link rel="icon" href="../icon/d-c-123.ico">
 	<!-- Tipografia -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Dancing+Script&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 	<!-- JS para el navToggle -->
 	<script defer src="../scripts/index.js"></script>
 	<!-- Boostrap -->
@@ -35,7 +37,7 @@
 	<header class="header">
 		<nav class="navbar navbar-expand-lg bg-light">
 			<!-- Icono de Dulce Capricho inicio -->
-			<div class="container-logo animate__animated animate__heartBeat animate__delay-1s">
+			<div class="container-logo animate__animated animate__pulse">
 				<a href="../index.html"><img src="../icon/d-c12.png" alt="Dulce Capricho" class="logo navbar-brand"></a>
 			</div>
 			<!-- Icono de Dulce Capricho fin -->
@@ -47,7 +49,7 @@
 			<!-- NavBar fin-->
 			<!-- navEnlaces inicio-->
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="nav navbar-nav nav--display">
+				<ul class="navbar-nav animate__animated animate__bounceInDown">
 					<li class="nav-item nav-item--position">
 						<a href="../index.html" class="nav-link nav__menu-link nav__menu-link--mdf">Inicio</a>
 					</li>
@@ -104,20 +106,31 @@
 				<h3 class="h3-title h3-title--about-us">Conoce a nuestra <span class="txt-pink">Pastelera</span>👩‍🍳
 				</h3>
 				<div class="about-chef">
-					<div class="img-chef-container">
+					<!-- imagen del chef inicio -->
+					<div class="img-chef-container col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
 						<img class="img-chef" src="../images/about-us-img/pastelera.jpg" alt="Pastelera">
 					</div>
-					<p class="description-2">
-						Ipsum molestias aut libero placeat consectetur facere Veniam illo beatae enim fugiat officia!
+					<!-- imagen del chef fin -->
+					<!-- descripcion inicio -->
+					<p class="description-2 ol-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+						Ipsum molestias aut libero placeat consectetur facere Veniam illo beatae enim fugiat
+						officia!
 						Adipisci laborum harum architecto dicta explicabo inventore labore Voluptatibus quidem a
-						recusandae illo tempore earum Similique error<br>
-						Lorem saepe laudantium veniam laudantium id, commodi? Magni rerum dolorem neque odit nostrum?
-						Ipsam adipisci asperiores voluptatibus tenetur porro. Eos nihil provident nam enim doloremque
-						Dolores reiciendis est nisi laborum<br>
+						recusandae illo tempore earum Similique error
+						<br>
+						Lorem saepe laudantium veniam laudantium id, commodi? Magni rerum dolorem neque odit
+						nostrum?
+						Ipsam adipisci asperiores voluptatibus tenetur porro. Eos nihil provident nam enim
+						doloremque
+						Dolores reiciendis est nisi laborum
+						<br>
 						Amet dolore natus eos obcaecati iusto Reiciendis at porro laborum aliquid est minima ipsum
-						reprehenderit? Dolorum architecto libero soluta a et. Dolor iusto repellat facere perspiciatis
-						expedita Beatae consequatur mollitia<br>
+						reprehenderit? Dolorum architecto libero soluta a et. Dolor iusto repellat facere
+						perspiciatis
+						expedita Beatae consequatur mollitia
+						<br>
 					</p>
+					<!-- descripcion fin -->
 				</div>
 			</section>
 		</article>
@@ -166,9 +179,9 @@
 	</script>
 	<!-- Scripts de WOW -->
 	<script src="../scripts/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+	<script>
+		new WOW().init();
+	</script>
 	<!-- Scripts de Bootstrap + Librerias -->
 	<script src="../scripts/jquery.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

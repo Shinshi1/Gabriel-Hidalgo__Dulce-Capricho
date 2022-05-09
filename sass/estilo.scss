@@ -1,0 +1,1757 @@
+/* ----------------------------- variables inicio ------------------------------ */
+
+/* paleta de colores inicio */
+$colorPalette1: #E81C9A;
+$colorPalette2: #FF00FF;
+/*$colorPalette3: #E8CF33;
+$colorPalette4: #05DAE8;
+$colorPalette5: #0B939C;*/
+/* paleta de colores fin */
+
+/* fuente de letras inicio */
+$font1: 'Fredericka the Great',
+cursive;
+$font2: 'Averia Serif Libre',
+cursive;
+$font3: 'Great Vibes',
+cursive;
+$font4: 'PT Sans',
+sans-serif;
+/* fuente de letras fin */
+
+/* background inicio */
+$bg-color: #333333;
+/* background fin */
+/* ------------------------------variables fin -----------------------------------*/
+
+
+* {
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+/* -------------------General----------------------- */
+
+body {
+    background: $bg-color;
+}
+
+/* nav inicio */
+
+.header {
+    height: 135px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100000000;
+}
+
+.navbar-nav {
+    align-items: center;
+
+    .nav__menu-link--active {
+        color: $colorPalette1;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px #000;
+        text-transform: uppercase;
+        background-image: repeating-linear-gradient(#ffffff, #543f2a00 100px);
+        border-radius: 5px;
+        padding: 10px;
+        filter: drop-shadow(0 0 5px $colorPalette1);
+        transition: 0.3s;
+    }
+
+    .nav__menu-link--mdf {
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #777;
+        background-image: repeating-linear-gradient(#ffffff, #543f2a00 100px);
+        border-radius: 5px;
+        padding: 5px;
+
+        &:hover {
+            color: $colorPalette1;
+            filter: drop-shadow(0 0 5px #000);
+            transition: 0.3s;
+            transition: 0.3s;
+        }
+    }
+}
+
+.container-logo {
+    width: 20%;
+    height: 20vh;
+    z-index: 100000000;
+
+    .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+        &:hover {
+            filter: hue-rotate(40deg);
+        }
+    }
+}
+
+.nav__toggle {
+    background: none;
+    border: none;
+    padding: 0 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 100000000000;
+}
+
+.nav-item--position {
+    padding: 45px 15px;
+}
+
+/* nav fin */
+
+/* hero incio */
+.jumbotron {
+    padding: 0;
+    margin: 0;
+
+    .hero-container {
+        margin: auto;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+/* hero fin */
+
+/* whatsapp icono inicio */
+
+.contact {
+    position: fixed;
+    right: 20px;
+    bottom: 12vh;
+}
+
+/* whatsapp icono fin */
+
+/* TITULOS */
+
+.h1-title {
+    text-align: center;
+    line-height: 2em;
+    font-size: 4.5em;
+    color: #fff;
+    background-color: $colorPalette2;
+    font-family: $font1;
+}
+
+.h2-title {
+    color: #fff;
+    text-align: center;
+    font-size: 3.5em;
+    font-family: $font2;
+}
+
+.h3-title {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 2.9em;
+    color: #fff;
+    font-family: $font2;
+}
+
+/* footer inicio*/
+
+.footer {
+    width: 100%;
+    height: 25vh;
+    background-color: $colorPalette2;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 7% 0 7%;
+    height: max-content;
+
+    .colum1 {
+        display: inline-block;
+        line-height: 1.5rem;
+
+        .row {
+            list-style: none;
+            line-height: 2rem;
+        }
+
+        .row--redes {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+
+    .colum2 {
+        display: inline-block;
+        line-height: 1.5rem;
+
+        .row {
+            list-style: none;
+            line-height: 2rem;
+        }
+
+        .help-link {
+            text-decoration: none;
+            color: #000;
+
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+                text-shadow: 0 0 7px #000;
+                filter: drop-shadow(0 0 7px #000);
+            }
+        }
+    }
+
+
+    .colum3 {
+        display: inline-block;
+        line-height: 1.5rem;
+
+        .row {
+            list-style: none;
+            line-height: 2rem;
+        }
+
+        .icon-contac--foot {
+            line-height: 2;
+        }
+    }
+}
+
+.colum-footer__title {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    font-family: $font4;
+    font-weight: 600;
+    color: #eee;
+    text-shadow: 0px 0px 7px #000;
+
+    .emoji {
+        font-size: 1.5rem;
+    }
+
+}
+
+.colum-footer__text {
+    font-size: x-large;
+    font-family: $font4;
+}
+
+.icono {
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        filter: contrast(2);
+        filter: brightness(1.5);
+        transition: 1s;
+    }
+}
+
+/* Footer fin*/
+
+
+/* -------------------------INDEX----------------------------- */
+
+/* Index Titulos inicio*/
+.h2-title--index {
+    line-height: 2;
+}
+
+/* Index Titulos Fin */
+
+/* --------Index Sección1 inicio*---------/
+/* Carousel inicio*/
+.carousel-indicators {
+    li {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border-color: 4px solid #000;
+        background-color: $colorPalette1;
+    }
+}
+
+.fa-circle-chevron-left {
+    font-size: 1.7rem;
+    color: $colorPalette1;
+    font-weight: bold;
+}
+
+.fa-circle-chevron-right {
+    font-size: 1.7rem;
+    color: $colorPalette1;
+    font-weight: bold;
+}
+
+/* Carousel fin*/
+/* ----------Index Sección1 fin---------- */
+
+/* ----------Index Sección2 inicio---------- */
+
+.img-container {
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $colorPalette1;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        box-shadow: inset 0 0 15px #000;
+        background: #444;
+    }
+
+    .img-item {
+        max-height: 250px;
+        max-width: 250px;
+
+        .img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+            padding: 10px;
+            object-fit: cover;
+            box-shadow: 0 1px 3px rgba(255, 255, 255, 0.144), 0 1px 3px rgba(255, 253, 253, 0.24), 0 1.7px 2px rgba(255, 253, 253, 0.664);
+
+            &:hover {
+                filter: blur(1.2px) brightness(1.3) grayscale(100);
+                transition: all 1 ease;
+                filter: hue-rotate(300deg);
+                transform: scale(1.2);
+            }
+        }
+
+    }
+}
+
+/* ----------Index Sección2 fin---------- */
+
+/* ------------------------Productos------------------------------ */
+
+.card-product {
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+
+    img {
+        width: max-content;
+        height: 70%;
+        object-fit: cover;
+        border-radius: 7px;
+        box-shadow: 0 1px 3px rgba(255, 255, 255, 0.144), 0 1px 3px rgba(255, 253, 253, 0.24), 0 1.7px 2px rgba(255, 253, 253, 0.664), 0 1.7px 2px rgba(255, 253, 253, 0.87);
+
+        &:hover {
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+    }
+
+    h4 {
+        height: auto;
+        width: auto;
+        padding-top: 10px;
+    }
+
+    p {
+        padding-top: 3px;
+        line-height: 0;
+    }
+
+}
+
+.products-item {
+    text-align: center;
+    color: #fff;
+}
+
+/* ------------------------Sobre-Nosotros------------------------- */
+
+.about-us-1 {
+    width: 100%;
+    height: 55vh;
+    margin-top: 5rem;
+
+    .txt-pink {
+        color: $colorPalette1;
+    }
+
+    .description-1 {
+        color: #fff;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 4% 15%;
+    }
+
+}
+
+
+.about-us-2 {
+    width: 100%;
+    height: 100vh;
+
+    .h3-title--about-us {
+        line-height: 2rem;
+        padding: 5rem 0 3rem;
+    }
+
+    .txt-pink {
+        color: $colorPalette1;
+    }
+
+    .about-chef {
+        display: flex;
+        padding: 0 2rem;
+
+        .img-chef-container {
+            height: 500px;
+
+            .img-chef {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+
+        .description-2 {
+            height: auto;
+            color: #fff;
+            text-align: left;
+            font-size: 1.2rem;
+            border-left: #fff solid 1px;
+            height: fit-content;
+            padding-left: 9px;
+        }
+    }
+}
+
+/* ------------------------Mi-Cuenta------------------------------ */
+
+/* Formulario-iniciar sesión inicio */
+
+.acct-form {
+    background-color: #fff;
+    width: 40vw;
+    height: auto;
+    margin: auto;
+    border-radius: 4px;
+    margin-bottom: 15%;
+    margin-top: 7%;
+    padding-top: 3%;
+
+    .form-leyend {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .form__input {
+        border: none;
+        border-bottom: 1px solid $colorPalette1;
+        border-radius: 0;
+
+        &:focus {
+            border-radius: 5px;
+            border: 1px solid $colorPalette1;
+            box-shadow: 1px 0px 3px $colorPalette1, -1px 0px 3px $colorPalette1, 0px 1px 3px $colorPalette1, 0px -1px 3px $colorPalette1;
+        }
+    }
+
+    .form__btn--login {
+        border-radius: 3px;
+        color: #fff;
+        background-image: linear-gradient(to bottom, $colorPalette1 50%, #333);
+        border: transparent;
+        margin: 10px 20px;
+        font-size: 1.2em;
+        padding: 0.5rem;
+
+        &:hover {
+            color: #eee;
+            background-image: linear-gradient(to top, $colorPalette1 50%, #333);
+            padding: 0.5rem;
+        }
+    }
+
+    .new-acct {
+        font-weight: bold;
+    }
+
+    .new-acct--pink {
+        color: $colorPalette1;
+        font-weight: bold;
+    }
+}
+
+/* Formulario-iniciar sesión fin */
+
+/* ------------------------Compras-------------------------------- */
+
+.empty-cart {
+    width: 100%;
+    height: 100vh;
+
+    .empty-cart__center {
+        padding: 25% 0;
+    }
+}
+
+/* -------------------------Contacto------------------------------*/
+
+/* sección1 contacto inicio */
+
+.form {
+    background-color: #fff;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    padding: 10px;
+
+    .form-leyend {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .form__input {
+        border: none;
+        border-bottom: 1px solid $colorPalette1;
+        border-radius: 0;
+
+        &:focus {
+            border-radius: 5px;
+            border: 1px solid $colorPalette1;
+            box-shadow: 1px 0px 3px $colorPalette1, -1px 0px 3px $colorPalette1, 0px 1px 3px $colorPalette1, 0px -1px 3px $colorPalette1;
+        }
+    }
+
+    input::-webkit-inner-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .form__input-text-area {
+        resize: none;
+        border: 1px solid rgb(218, 212, 212);
+        border-radius: 5px;
+    }
+
+    .form__btn {
+        border-radius: 3px;
+        color: #eee;
+        background-image: linear-gradient(to bottom, $colorPalette1 50%, #333);
+        border: transparent;
+        margin: 0 20px;
+        font-size: 1.2em;
+        padding: 5px;
+
+        &:hover {
+            color: #fff;
+            padding: 5px;
+            background-image: linear-gradient(to top, $colorPalette1 50%, #333);
+        }
+    }
+}
+
+/* sección1 contacto fin */
+
+/* sección2 contacto inicio */
+
+.contac-banner-two {
+    height: auto;
+    width: 100%;
+    padding-bottom: 4rem;
+    display: flex;
+
+    /* mapa inicio */
+    .map-container {
+        padding: 1.5rem;
+        box-sizing: border-box;
+        display: inline-block;
+
+        .map {
+            border-radius: 0.5rem;
+        }
+    }
+
+    /* mapa fin */
+
+    /* mas info inicio */
+    .more-info-container {
+        display: inline-block;
+        width: max-content;
+        margin-top: 1.5rem;
+
+        .h2-title--contac {
+            background-color: inherit
+        }
+
+        .inf-item_container {
+            display: flex;
+            flex-direction: column;
+
+            .inf-item {
+                padding: 1rem;
+
+                .h3-title--contac {
+                    text-align: left;
+                    margin: .8rem;
+                    font-size: 1.7rem;
+
+                    .map-icon {
+                        height: 1.5rem;
+
+                        &:hover {
+                            transform: scale(1.5);
+                            filter: drop-shadow(0 0 0.75rem crimson);
+                            transition: 1s;
+                        }
+                    }
+
+                }
+
+                .p-inf-item {
+                    color: #fff;
+                    display: flex;
+                    column-gap: 10px;
+                    text-align: left;
+                }
+
+                .p-inf-item--lh {
+                    line-height: 1.7rem;
+                }
+            }
+        }
+    }
+
+    /* mas info fin*/
+}
+
+
+/* sección2 contacto fin */
+
+/* --------------------------------Ayuda------------------------- */
+/* General fin */
+
+/* General inicio */
+
+/* Creditos */
+
+.credits-container {
+    width: 100%;
+    height: 50vh;
+    margin: 2rem auto;
+    display: grid;
+
+    ul {
+        list-style: none;
+        margin: 2rem auto;
+    }
+
+    ul li {
+        padding-top: 1rem;
+    }
+
+    ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.description-help {
+    text-align: justify;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 5% 10%;
+
+}
+
+/*--------------------------------------------- Media Queries------------------------------------------------------------------ */
+
+/* ---------------------------DISPOSITIVOS EXTRA EXTRA PEQUEÑOS "xs"--------------- */
+@media only screen and (max-width:340.8px) {
+
+    /* --------------------MQ-NAV---------------- */
+    /* nav inicio */
+    .header {
+        height: 60px;
+    }
+
+    .container-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .nav__toggle {
+        font-size: 1.4rem;
+        display: block;
+        color: $colorPalette1;
+        text-shadow: 3px 2px 2px rgba(50, 50, 50, 0.10), 2px 2px 1px rgba(20, 20, 20, 0.5);
+    }
+
+    .nav-item--position {
+        padding: 20px 20px;
+    }
+
+    /* nav fin */
+
+    /* whatsapp icono inicio */
+
+    .contact {
+        right: 7px;
+        bottom: 7vh;
+    }
+
+    /* whatsapp icono fin */
+
+    .icono {
+        height: 17px;
+        width: 17px;
+    }
+
+    /* TITULOS */
+    .h1-title {
+        font-size: 1.5rem;
+    }
+
+    .h2-title {
+        font-size: 1.4rem;
+    }
+
+    .h3-title {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    /*--------------MQ-Footer--------------- */
+
+    .footer {
+        .colum1 {
+            .row {
+                line-height: 1rem;
+            }
+
+            .row--redes {
+                flex-direction: column;
+                line-height: 2;
+            }
+        }
+
+        .colum2 {
+            .row {
+                line-height: 1rem;
+            }
+        }
+
+        .colum3 {
+            .row {
+                line-height: 1rem;
+            }
+
+            .icon-contac--foot {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .colum-footer__title {
+        font-size: 0.7rem;
+        padding-bottom: 0.2rem;
+
+        .emoji {
+            font-size: 0.6rem;
+        }
+    }
+
+
+    .colum-footer__text {
+        font-size: 0.45rem;
+        font-weight: bold;
+    }
+
+
+    /* ----------------------MQ--SOBRE-NOSOTROS inicio ------------- */
+
+    .about-us-1 {
+        height: 55vh;
+        margin-top: 1rem;
+
+        .description-1 {
+            font-size: 0.7rem;
+            margin: 5% 10%;
+        }
+    }
+
+    .about-us-2 {
+        height: 65vh;
+
+        .h3-title--about-us {
+            line-height: 2;
+            padding: 3rem 0 1rem;
+        }
+
+        .about-chef {
+            display: flex;
+            padding: 0 2rem;
+            flex-wrap: wrap;
+
+            .img-chef-container {
+                width: 100%;
+                height: 200px;
+
+                .img-chef {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+
+            .description-2 {
+                text-align: justify;
+                width: 100%;
+                font-size: 0.55rem;
+                border: none;
+                padding-left: 0;
+            }
+        }
+    }
+
+    /* ----------------------MQ--SOBRE-NOSOTROS fin ------------- */
+    /* ----------------------MQ--MI-CUENTA inicio------------- */
+
+    .acct-form {
+        width: 85vw;
+        margin-bottom: 10%;
+    }
+
+    /* ----------------------MQ--SOBRE-NOSOTROS fin------------- */
+    /* ----------------------MQ--PRODUCTOS inicio------------- */
+    .card-product {
+
+        h4 {
+            font-size: medium;
+        }
+
+        p {
+            font-size: smaller;
+        }
+
+    }
+
+    /* ----------------------MQ--PRODUCTOS fin------------- */
+    /* ----------------------MQ--CONTACTO inicio----------- */
+
+    /* sección1 contacto inicio */
+    .form {
+        width: auto;
+        max-width: 360px;
+        padding: 0;
+
+        .form__btn {
+            font-size: smaller;
+        }
+
+
+        input,
+        .form__input-text-area {
+            font-size: small;
+        }
+    }
+
+    /* sección1 contacto fin */
+
+    /* sección2 contacto inicio */
+
+    .contac-banner-two {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        /* mapa inicio */
+        .map-container {
+            text-align: center;
+            width: auto;
+            padding: 0;
+
+            .map {
+                height: 325px;
+                width: auto;
+                padding: 0;
+            }
+        }
+
+        /* mapa fin */
+
+        /* mas info inicio */
+        .more-info-container {
+            width: auto;
+
+            .inf-item_container {
+                justify-content: center;
+
+                .inf-item {
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    width: auto;
+
+                    .h3-title--contac {
+                        font-size: larger;
+                    }
+
+                    .p-inf-item {
+                        font-size: smaller;
+                    }
+                }
+            }
+        }
+
+        /* mas info fin */
+    }
+
+    /* sección2 contacto fin */
+    /* ----------------------MQ--CONTACTO fin----------- */
+
+
+}
+
+/* -------------------DISPOSITIVOS MUY PEQUEÑOS "xs"---------------------- */
+@media only screen and (min-width:341px) and (max-width:521.8px) {
+
+    /* --------------------MQ-NAV---------------- */
+    /* nav inicio */
+    .header {
+        height: 60px;
+    }
+
+    .container-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav__toggle {
+        font-size: 1.4rem;
+        display: block;
+        color: $colorPalette1;
+        text-shadow: 3px 2px 2px rgba(50, 50, 50, 0.10), 2px 2px 1px rgba(20, 20, 20, 0.5);
+    }
+
+    .nav-item--position {
+        padding: 20px 20px;
+    }
+
+    /* nav fin */
+
+    /* whatsapp icono fin */
+    .contact {
+        right: 7px;
+        bottom: 7vh;
+    }
+
+    /* whatsapp icono fin */
+
+    /* icono inicio */
+    .icono {
+        height: 20px;
+        width: 20px;
+    }
+
+    /* icono fin */
+
+    /* TITULOS */
+
+    .h1-title {
+        line-height: 2.5em;
+        font-size: 2rem;
+    }
+
+    .h2-title {
+        font-size: 1.8rem;
+    }
+
+    .h3-title {
+        line-height: 2rem;
+        font-size: 1.4rem;
+    }
+
+    /* --------------MQ-Footer--------------- */
+
+    .footer {
+        .colum1 {
+            .row {
+                line-height: 1rem;
+            }
+
+
+            .row--redes {
+                flex-direction: column;
+            }
+        }
+
+        .colum2 {
+            .row {
+                line-height: 1rem;
+            }
+        }
+
+        .colum3 {
+            .row {
+                line-height: 1rem;
+            }
+
+            .icon-contac--foot {
+                line-height: 1;
+            }
+        }
+
+    }
+
+
+    .colum-footer__title {
+        font-size: 1rem;
+        padding-bottom: 0.4rem;
+
+        .emoji {
+            font-size: 0.6rem;
+        }
+    }
+
+
+    .colum-footer__text {
+        font-size: 0.7rem;
+    }
+
+    /* ----------------------MQ--PRODUCTOS inicio ------------- */
+
+    .card-product {
+        h4 {
+            font-size: medium;
+        }
+
+        p {
+            font-size: smaller;
+        }
+    }
+
+    /* ----------------------MQ--PRODUCTOS fin ------------- */
+
+    /* ----------------------MQ--SOBRE-NOSOTROS inicio ------------- */
+
+    .about-us-1 {
+        height: 60vh;
+        margin-top: 1rem;
+
+        .description-1 {
+            font-size: 0.9rem;
+            margin: 5% 10%;
+        }
+    }
+
+    .about-us-2 {
+
+        .h3-title--about-us {
+            line-height: 3rem;
+        }
+
+
+        .about-chef {
+            flex-wrap: wrap;
+
+            .img-chef-container {
+                width: 100%;
+                height: 200px;
+            }
+
+
+            .description-2 {
+                text-align: justify;
+                width: 100%;
+                font-size: 0.75rem;
+                border: none;
+                padding-left: 0;
+            }
+        }
+    }
+
+    /* ----------------------MQ--SOBRE-NOSOTROS fin ------------- */
+
+    /* ----------------------MQ--MI-CUENTA inicio------------- */
+
+    /* Formulario-iniciar sesión inicio */
+    .acct-form {
+        width: 80vw;
+        margin-bottom: 10%;
+    }
+
+    /* Formulario-iniciar sesión inicio */
+
+    /* ----------------------MQ--MI-CUENTA fin------------- */
+
+    /* ----------------------MQ--CONTACTO inicio----------- */
+
+    /* sección1 contacto inicio */
+
+    .form {
+        width: auto;
+        max-width: 360px;
+    }
+
+    /* sección1 contacto fin */
+
+    /* sección2 contacto inicio */
+
+    .contac-banner-two {
+        flex-direction: column;
+        align-items: center;
+
+        /* mapa inicio */
+        .map-container {
+            text-align: center;
+            width: auto;
+
+            .map {
+                height: 325px;
+                width: auto;
+            }
+        }
+
+        /* mapa fin */
+
+        /* mas info inicio */
+        .more-info-container {
+            width: auto;
+
+            .inf-item_container {
+                justify-content: center;
+
+                .inf-item {
+                    display: flex;
+                    flex-direction: column;
+                    width: auto;
+
+                    .h3-title--contac {
+                        font-size: larger;
+                    }
+
+                    .p-inf-item {
+                        font-size: smaller;
+                    }
+                }
+            }
+        }
+
+        /* mas info fin */
+    }
+
+    /* sección2 contacto fin */
+    /* ----------------------MQ--CONTACTO fin----------- */
+}
+
+/* ------------------DISPOSITIVOS PEQUEÑOS "sm" ----------------(TELEFONOS, 576px and up) */
+@media only screen and (min-width:522px) and (max-width:767.98px) {
+
+    /* --------------------MQ-NAV---------------- */
+
+    /* nav inicio */
+
+    .header {
+        height: 60px;
+    }
+
+    .container-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav__toggle {
+        font-size: 2rem;
+        display: block;
+        color: $colorPalette1;
+        text-shadow: 3px 2px 2px rgba(50, 50, 50, 0.10), 2px 2px 1px rgba(20, 20, 20, 0.5);
+    }
+
+    .nav-item--position {
+        padding: 20px 20px;
+    }
+
+    /* nav fin */
+
+    /* Icono de whatsapp inicio */
+
+    .contact {
+        right: 7px;
+        bottom: 7vh;
+    }
+
+    /* Icono de whatsapp fin */
+
+    /* Icono inicio */
+    .icono {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* Icono fin */
+
+    /* TITULOS */
+
+    .h1-title {
+        font-size: 3rem;
+    }
+
+    .h2-title {
+        font-size: 2rem;
+    }
+
+    .h3-title {
+        font-size: 1.4rem;
+    }
+
+    /* --------------MQ-Footer--------------- */
+
+    .footer {
+        .colum1 {
+            .row--redes {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .colum-footer__title {
+        font-size: 1.5rem;
+        padding-bottom: 0.6rem;
+
+        .emoji {
+            font-size: 1rem;
+        }
+    }
+
+
+    .colum-footer__text {
+        font-size: 0.9rem;
+    }
+
+    /* ----------------------MQ--SOBRE-NOSOTROS inicio------------- */
+
+    /* sobre nosotros seccion1 inicio */
+
+    .about-us-1 {
+        height: 50vh;
+        margin-top: 2rem;
+
+        .description-1 {
+            font-size: 1rem;
+            margin: 5% 10%;
+        }
+    }
+
+    /* sobre nosotros seccion1 fin */
+
+    /* sobre nosotros seccion2 inicio */
+
+    .about-us-2 {
+        .about-chef {
+            flex-wrap: wrap;
+
+            .img-chef-container {
+                width: 100%;
+                height: 200px;
+            }
+
+            .description-2 {
+                text-align: justify;
+                width: 100%;
+                font-size: 0.8rem;
+                border: none;
+                padding-left: 0;
+            }
+        }
+    }
+
+    /* sobre nosotros seccion2 fin */
+
+    /* ----------------------MQ--SOBRE-NOSOTROS fin------------- */
+    /* ----------------------MQ--MI-CUENTA inicio------------- */
+
+    /* Formulario-iniciar sesión inicio */
+
+    .acct-form {
+        width: 55vw;
+        margin-bottom: 10%;
+    }
+
+    /* Formulario-iniciar sesión fin */
+
+    /* ----------------------MQ--MI-CUENTA fin------------- */
+    /* ----------------------MQ--PRODUCTOS inicio------------- */
+
+    .card-product {
+        h4 {
+            font-size: medium;
+        }
+
+        p {
+            font-size: smaller;
+        }
+    }
+
+    /* ----------------------MQ--PRODUCTOS fin---------------- */
+
+    /* ----------------------MQ--CONTACTO inicio----------- */
+
+    /* sección2 contacto inicio */
+    .contac-banner-two {
+        flex-direction: column;
+        align-items: center;
+
+        /* mapa inicio */
+
+        .map-container {
+            text-align: center;
+
+            .map {
+                height: 300px;
+                width: 400px;
+            }
+        }
+
+        /* mapa fin */
+
+        /* mas info inicio */
+        .more-info-container {
+            .inf-item_container {
+                justify-content: center;
+
+                .inf-item {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .h3-title--contac {
+                        font-size: larger;
+                    }
+
+                    .p-inf-item {
+                        font-size: small;
+                    }
+                }
+            }
+        }
+
+        /* mas info inicio */
+    }
+
+    /* sección2 contacto fin */
+    /* ----------------------MQ--CONTACTO fin----------- */
+}
+
+/* ---------------------------------------DISPOSITIVOS MEDIANOS (TABLETS) "md" -----------------------*/
+@media only screen and (min-width: 768px) and (max-width:991.98px) {
+
+    /* --------------------MQ-NAV inicio---------------- */
+
+    /* nav inicio */
+
+    .header {
+        height: 120px;
+    }
+
+    .container-logo {
+        width: 135px;
+        height: 135px;
+    }
+
+    .nav__toggle {
+        font-size: 2.7rem;
+        display: block;
+        color: $colorPalette1;
+        text-shadow: 3px 2px 2px rgba(50, 50, 50, 0.10), 2px 2px 1px rgba(20, 20, 20, 0.5);
+    }
+
+    /* nav fin */
+
+    /* whatsapp icono inicio */
+
+    .contact {
+        right: 12px;
+    }
+
+    /* whatsapp icono fin */
+
+    /* icono inicio */
+
+    .icono {
+        height: 35px;
+        width: 35px;
+    }
+
+    /* icono fin */
+
+    /* TITULOS */
+
+    .h1-title {
+        font-size: 4.5rem;
+    }
+
+    .h2-title {
+        font-size: 3.5rem;
+    }
+
+    .h3-title {
+        font-size: 2.5rem;
+    }
+
+    /* --------------------MQ-NAV fin---------------- */
+    /* --------------------MQ-Footer inicio----------------- */
+
+    .colum-footer__title {
+        font-size: 1.8rem;
+        padding-bottom: 0.8rem;
+
+        .emoji {
+            font-size: 1.3rem;
+        }
+    }
+
+    .colum-footer__text {
+        font-size: 1.2rem;
+    }
+
+    /* --------------------MQ-Footer fin----------------- */
+
+    /* --------------------MQ-SOBRE-NOSOTROS inicio----------- */
+
+    .about-us-1 {
+        height: 60vh;
+        margin: 3rem 0 8rem;
+
+        .description-1 {
+            font-size: 1.5rem;
+            margin: 5% 15%;
+        }
+    }
+
+    .about-us-2 {
+
+        .h3-title--about-us {
+            line-height: 4rem;
+        }
+
+
+        .about-chef {
+            flex-wrap: wrap;
+
+            .img-chef-container {
+                width: 100%;
+                height: 400px;
+            }
+
+            .description-2 {
+                text-align: justify;
+                width: 100%;
+                font-size: 1rem;
+                border: none;
+                padding-left: 0;
+            }
+        }
+    }
+
+    /* --------------------MQ-SOBRE-NOSOTROS fin----------- */
+    /* ----------------- MQ-PRODUCTOS inicio--------------- */
+    .card-product {
+        h4 {
+            font-size: large;
+        }
+
+        p {
+            font-size: medium;
+        }
+    }
+
+    /*------------------ MQ-PRODUCTOS fin--------------- */
+    /* ----------------------MQ--CONTACTO inicio----------- */
+    /* sección2 contacto inicio */
+    .contac-banner-two {
+        flex-direction: column;
+        align-items: center;
+
+        /* mapa inicio */
+
+        .map-container {
+            text-align: center;
+
+            .map {
+                height: 325px;
+                width: 425px;
+            }
+        }
+
+        /* mapa fin */
+
+        /* mas info inicio */
+
+        .more-info-container {
+            .inf-item_container {
+                flex-direction: row;
+                justify-content: center;
+
+                .inf-item {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .h3-title--contac {
+                        font-size: larger;
+                    }
+                }
+            }
+        }
+
+        /* mas info fin */
+    }
+
+    /* sección2 contacto fin */
+    /* ----------------------MQ--CONTACTO fin----------- */
+}
+
+/*------------------------DISPOSITIVOS GRANDES (COMPUTADORAS) "lg"--------------------- */
+@media only screen and (min-width: 992px) and (max-width:1199.98px) {
+
+    /* --------------------MQ-GENERAL---------------- */
+    /* ------nav inicio------ */
+    .header {
+        height: 120px;
+    }
+
+    .container-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* enlaces inicio */
+
+    .nav-item a {
+        font-size: large;
+    }
+
+    /* enlaces fin */
+
+    /* -------nav fin------- */
+
+    /* whatsapp icono inicio */
+
+    .contact {
+        right: 7px;
+        bottom: 7vh;
+    }
+
+    /* whatsapp icono fin */
+
+    /*  icono inicio */
+
+    .icono {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* icono fin */
+
+    /* TITULOS */
+
+    .h1-title {
+        line-height: 3em;
+        font-size: 4rem;
+    }
+
+    .h2-title {
+        font-size: 3rem;
+    }
+
+    .h3-title {
+        font-size: 2rem;
+    }
+
+
+    /* footer inicio */
+
+    .colum-footer__title {
+        padding-bottom: 0.6rem;
+
+        .emoji {
+            font-size: 1.4rem;
+        }
+    }
+
+    .colum-footer__text {
+        font-size: 1.3rem;
+    }
+
+    /* footer fin */
+
+    /* ----------------------MQ--SOBRE-NOSOTROS------------- */
+
+    .about-us-1 {
+        height: 50vh;
+
+        .description-1 {
+            font-size: 1rem;
+            margin: 5% 10%;
+        }
+    }
+
+    .about-us-2 {
+        .about-chef {
+            display: flex;
+            padding: 0 2rem;
+            flex-wrap: wrap;
+
+            .img-chef-container {
+                width: 100%;
+                height: 300px;
+            }
+
+            .description-2 {
+                text-align: justify;
+                width: 100%;
+                font-size: 0.8rem;
+                border: none;
+                padding-left: 0;
+            }
+        }
+    }
+
+    /* ----------------------MQ--PRODUCTOS inicio------------- */
+    .card-product {
+        h4 {
+            font-size: large;
+        }
+
+        p {
+            font-size: medium;
+        }
+    }
+
+
+    /* ----------------------MQ--PRODUCTOS fin------------- */
+    /* ----------------------MQ--CONTACTO inicio------------- */
+    /* sección2 contacto inicio */
+    .contac-banner-two {
+        .map-container {
+            .map {
+                height: 380px;
+                width: 450px;
+            }
+        }
+    }
+
+    /* sección2 contacto fin */
+    /* ----------------------MQ--CONTACTO fin------------- */
+}
+
+/*--------------------------------DISPOSITIVOS EXTRAGRANDES (COMPUTADORAS GRANDES) "xl"---------------- */
+@media only screen and (min-width: 1200px) and (max-width:1399.98px) {
+
+    /* --------------------------MQ-NAV----------------------------------------------------------- */
+
+    /* nav inicio */
+
+    .header {
+        height: 150px;
+    }
+
+    .container-logo {
+        width: 15%;
+    }
+
+    /* enlaces inicio */
+
+    .nav-item a {
+        font-size: x-large;
+    }
+
+    /* enlaces fin */
+
+    /* nav fin */
+
+    /* ----------------------MQ--PRODUCTOS inicio------------- */
+    .card-product {
+        h4 {
+            font-size: x-large;
+        }
+
+        p {
+            font-size: large;
+        }
+    }
+
+    /* ----------------------MQ--PRODUCTOS fin------------- */
+}
+
+/*----------------DISPOSITIVOS EXTRA EXTRA GRANDES (COMPUTADORAS MAS GRANDES) "xxl"--------------------------------------*/
+@media only screen and (min-width: 1400px) {
+
+    /* --------------------------MQ-NAV inicio----------------------------------------------------------- */
+    /* nav inicio */
+
+    .header {
+        height: 160px;
+    }
+
+    .container-logo {
+        width: 15%;
+    }
+
+    /* enlaces inicio */
+
+    .nav-item a {
+        font-size: x-large;
+    }
+
+    /* enlaces fin */
+
+    /* nav fin */
+    /* --------------------------MQ-NAV fin----------------------------------------------------------- */
+
+    /* ----------------------MQ--PRODUCTOS inicio------------- */
+    .card-product {
+        p {
+            font-size: large;
+        }
+    }
+
+    /* ----------------------MQ--PRODUCTOS fin------------- */
+}
