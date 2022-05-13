@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/* ----------------------------- variables inicio ------------------------------ */
-/* paleta de colores inicio */
-/*$colorPalette3: #E8CF33;
-$colorPalette4: #05DAE8;
-$colorPalette5: #0B939C;*/
-/* paleta de colores fin */
-/* fuente de letras inicio */
-/* fuente de letras fin */
-/* background inicio */
-/* background fin */
-/* ------------------------------variables fin -----------------------------------*/
 * {
   font-family: "Averia Serif Libre", cursive;
 }
@@ -61,13 +50,13 @@ body {
 }
 
 .container-logo {
-  width: 20%;
   height: 20vh;
+  width: 20%;
   z-index: 100000000;
 }
 .container-logo .logo {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: contain;
 }
 .container-logo .logo:hover {
@@ -94,9 +83,9 @@ body {
   margin: 0;
 }
 .jumbotron .hero-container {
-  margin: auto;
-  width: 100%;
   height: 100vh;
+  width: 100%;
+  margin: auto;
 }
 .jumbotron .hero__img {
   height: 100%;
@@ -141,8 +130,8 @@ body {
 
 /* footer inicio*/
 .footer {
-  width: 100%;
   height: 25vh;
+  width: 100%;
   background-color: #FF00FF;
   display: flex;
   justify-content: space-between;
@@ -208,11 +197,11 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-.icono {
-  width: 40px;
+.icono, .contact {
   height: 40px;
+  width: 40px;
 }
-.icono:hover {
+.icono:hover, .contact:hover {
   filter: contrast(2);
   filter: brightness(1.5);
   transition: 1s;
@@ -294,8 +283,8 @@ body {
 /* ----------Index Sección2 fin---------- */
 /* ------------------------Productos------------------------------ */
 .card-product {
-  width: 100%;
   height: 100%;
+  width: 100%;
   padding-top: 3rem;
 }
 .card-product img {
@@ -326,8 +315,8 @@ body {
 
 /* ------------------------Sobre-Nosotros------------------------- */
 .about-us-1 {
-  width: 100%;
   height: 55vh;
+  width: 100%;
   margin-top: 5rem;
 }
 .about-us-1 .txt-pink {
@@ -341,8 +330,8 @@ body {
 }
 
 .about-us-2 {
-  width: 100%;
   height: 100vh;
+  width: 100%;
 }
 .about-us-2 .h3-title--about-us {
   line-height: 2rem;
@@ -359,8 +348,8 @@ body {
   height: 500px;
 }
 .about-us-2 .about-chef .img-chef-container .img-chef {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -377,9 +366,9 @@ body {
 /* ------------------------Mi-Cuenta------------------------------ */
 /* Formulario-iniciar sesión inicio */
 .acct-form {
-  background-color: #fff;
-  width: 40vw;
   height: auto;
+  width: 40vw;
+  background-color: #fff;
   margin: auto;
   border-radius: 4px;
   margin-bottom: 15%;
@@ -414,19 +403,18 @@ body {
   background-image: linear-gradient(to top, #E81C9A 50%, #333);
   padding: 0.5rem;
 }
-.acct-form .new-acct {
+.acct-form .new-acct, .acct-form .new-acct--pink {
   font-weight: bold;
 }
 .acct-form .new-acct--pink {
   color: #E81C9A;
-  font-weight: bold;
 }
 
 /* Formulario-iniciar sesión fin */
 /* ------------------------Compras-------------------------------- */
 .empty-cart {
-  width: 100%;
   height: 100vh;
+  width: 100%;
 }
 .empty-cart .empty-cart__center {
   padding: 25% 0;
@@ -435,9 +423,9 @@ body {
 /* -------------------------Contacto------------------------------*/
 /* sección1 contacto inicio */
 .form {
-  background-color: #fff;
-  width: 50%;
   height: auto;
+  width: 50%;
+  background-color: #fff;
   margin: auto;
   border-radius: 5px;
   margin-bottom: 3rem;
@@ -547,8 +535,8 @@ body {
 /* General inicio */
 /* Creditos */
 .credits-container {
-  width: 100%;
   height: 50vh;
+  width: 100%;
   margin: 2rem auto;
   display: grid;
 }
@@ -583,8 +571,8 @@ body {
   }
 
   .container-logo {
-    width: 35px;
     height: 35px;
+    width: 35px;
   }
 
   .nav__toggle {
@@ -606,7 +594,7 @@ body {
   }
 
   /* whatsapp icono fin */
-  .icono {
+  .icono, .contact {
     height: 17px;
     width: 17px;
   }
@@ -679,12 +667,12 @@ body {
     flex-wrap: wrap;
   }
   .about-us-2 .about-chef .img-chef-container {
-    width: 100%;
     height: 200px;
+    width: 100%;
   }
   .about-us-2 .about-chef .img-chef-container .img-chef {
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
   }
@@ -780,8 +768,8 @@ body {
   }
 
   .container-logo {
-    width: 50px;
     height: 50px;
+    width: 50px;
   }
 
   .nav__toggle {
@@ -804,7 +792,7 @@ body {
 
   /* whatsapp icono fin */
   /* icono inicio */
-  .icono {
+  .icono, .contact {
     height: 20px;
     width: 20px;
   }
@@ -880,8 +868,8 @@ body {
     flex-wrap: wrap;
   }
   .about-us-2 .about-chef .img-chef-container {
-    width: 100%;
     height: 200px;
+    width: 100%;
   }
   .about-us-2 .about-chef .description-2 {
     text-align: justify;
@@ -956,8 +944,8 @@ body {
   }
 
   .container-logo {
-    width: 100px;
     height: 100px;
+    width: 100px;
   }
 
   .nav__toggle {
@@ -980,7 +968,7 @@ body {
 
   /* Icono de whatsapp fin */
   /* Icono inicio */
-  .icono {
+  .icono, .contact {
     height: 30px;
     width: 30px;
   }
@@ -1033,8 +1021,8 @@ body {
     flex-wrap: wrap;
   }
   .about-us-2 .about-chef .img-chef-container {
-    width: 100%;
     height: 200px;
+    width: 100%;
   }
   .about-us-2 .about-chef .description-2 {
     text-align: justify;
@@ -1108,8 +1096,8 @@ body {
   }
 
   .container-logo {
-    width: 135px;
     height: 135px;
+    width: 135px;
   }
 
   .nav__toggle {
@@ -1127,7 +1115,7 @@ body {
 
   /* whatsapp icono fin */
   /* icono inicio */
-  .icono {
+  .icono, .contact {
     height: 35px;
     width: 35px;
   }
@@ -1178,8 +1166,8 @@ body {
     flex-wrap: wrap;
   }
   .about-us-2 .about-chef .img-chef-container {
-    width: 100%;
     height: 400px;
+    width: 100%;
   }
   .about-us-2 .about-chef .description-2 {
     text-align: justify;
@@ -1241,8 +1229,8 @@ body {
   }
 
   .container-logo {
-    width: 100px;
-    height: 100px;
+    height: 140px;
+    width: 140px;
   }
 
   /* enlaces inicio */
@@ -1260,7 +1248,7 @@ body {
 
   /* whatsapp icono fin */
   /*  icono inicio */
-  .icono {
+  .icono, .contact {
     height: 30px;
     width: 30px;
   }
@@ -1308,8 +1296,8 @@ body {
     flex-wrap: wrap;
   }
   .about-us-2 .about-chef .img-chef-container {
-    width: 100%;
     height: 300px;
+    width: 100%;
   }
   .about-us-2 .about-chef .description-2 {
     text-align: justify;
@@ -1347,7 +1335,7 @@ body {
   }
 
   .container-logo {
-    width: 15%;
+    width: 19%;
   }
 
   /* enlaces inicio */
@@ -1373,10 +1361,6 @@ body {
   /* nav inicio */
   .header {
     height: 160px;
-  }
-
-  .container-logo {
-    width: 15%;
   }
 
   /* enlaces inicio */
