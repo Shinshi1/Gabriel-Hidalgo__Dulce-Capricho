@@ -49,6 +49,7 @@ body {
   transition: 0.3s;
 }
 
+/* logo inicio*/
 .container-logo {
   height: 20vh;
   width: 20%;
@@ -63,6 +64,7 @@ body {
   filter: hue-rotate(40deg);
 }
 
+/* logo fin */
 .nav__toggle {
   background: none;
   border: none;
@@ -131,7 +133,7 @@ body {
   font-family: "Averia Serif Libre", cursive;
 }
 
-/* footer inicio*/
+/* ----- footer inicio ----- */
 .footer {
   height: 25vh;
   width: 100%;
@@ -185,6 +187,7 @@ body {
   text-shadow: 0px 0px 7px #eee, 0px 0px 7px #eee;
 }
 
+/* titulo columna footer inicio */
 .colum-footer__title {
   font-size: 2rem;
   padding-bottom: 1.5rem;
@@ -197,6 +200,8 @@ body {
   font-size: 1.5rem;
 }
 
+/* titiulo columna footer fin */
+/* texto columna footer inicio*/
 .colum-footer__text {
   font-size: x-large;
   font-family: "PT Sans", sans-serif;
@@ -204,6 +209,7 @@ body {
   font-weight: bold;
 }
 
+/* texto columna footer fin */
 .icono, .contact {
   height: 40px;
   width: 40px;
@@ -214,7 +220,7 @@ body {
   transition: 1s;
 }
 
-/* Footer fin*/
+/* ----- footer fin ----- */
 /* -------------------------INDEX----------------------------- */
 /* Index Titulos inicio*/
 .h2-title--index {
@@ -223,6 +229,7 @@ body {
 
 /* Index Titulos Fin */
 /* --------Index Sección1 inicio*---------/
+
 /* Carousel inicio*/
 .carousel-indicators li {
   height: 25px;
@@ -245,8 +252,9 @@ body {
 }
 
 /* Carousel fin*/
-/* ----------Index Sección1 fin---------- */
-/* ----------Index Sección2 inicio---------- */
+/* ---------- Sección1 index fin---------- */
+/* ---------- Sección2 index inicio---------- */
+/* galeria index inicio */
 .img-container {
   height: 60vh;
   width: 100%;
@@ -287,8 +295,10 @@ body {
   transform: scale(1.2);
 }
 
-/* ----------Index Sección2 fin---------- */
+/* galeria index fin */
+/* ---------- sección2 index fin---------- */
 /* ------------------------Productos------------------------------ */
+/* carta productos inicio*/
 .card-product {
   height: 100%;
   width: 100%;
@@ -320,7 +330,9 @@ body {
   color: #fff;
 }
 
+/* carta productos fin*/
 /* ------------------------Sobre-Nosotros------------------------- */
+/* ----- sección1 sobre nosotros inicio ----- */
 .about-us-1 {
   height: 55vh;
   width: 100%;
@@ -336,6 +348,8 @@ body {
   margin: 4% 15%;
 }
 
+/* ----- sección1 sobre nosotros fin ----- */
+/* ----- sección2 sobre nosotros inicio ----- */
 .about-us-2 {
   height: 100vh;
   width: 100%;
@@ -370,6 +384,7 @@ body {
   padding-left: 9px;
 }
 
+/*  ----- sección2 sobre nosotros fin  ----- */
 /* ------------------------Mi-Cuenta------------------------------ */
 /* Formulario-iniciar sesión inicio */
 .acct-form {
@@ -428,7 +443,8 @@ body {
 }
 
 /* -------------------------Contacto------------------------------*/
-/* sección1 contacto inicio */
+/* ----- sección1 contacto inicio ----- */
+/* formulario contacto inicio */
 .form {
   height: auto;
   width: 50%;
@@ -478,17 +494,14 @@ body {
   background-image: linear-gradient(to top, #E81C9A 50%, #333);
 }
 
-/* sección1 contacto fin */
-/* sección2 contacto inicio */
+/*  formulario contacto fin*/
+/*  ----- sección1 contacto fin  ----- */
+/*  ----- sección2 contacto inicio  ----- */
 .contac-banner-two {
   height: auto;
   width: 100%;
   padding-bottom: 4rem;
   display: flex;
-  /* mapa inicio */
-  /* mapa fin */
-  /* mas info inicio */
-  /* mas info fin*/
 }
 .contac-banner-two .map-container {
   padding: 1.5rem;
@@ -536,11 +549,19 @@ body {
   line-height: 1.7rem;
 }
 
-/* sección2 contacto fin */
+/*  ----- sección2 contacto fin  ----- */
 /* --------------------------------Ayuda------------------------- */
-/* General fin */
-/* General inicio */
-/* Creditos */
+/* general inicio */
+.description-help {
+  text-align: justify;
+  color: #fff;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 5% 10%;
+}
+
+/* general fin */
+/* creditos inicio*/
 .credits-container {
   height: 50vh;
   width: 100%;
@@ -560,18 +581,11 @@ body {
   color: #fff;
 }
 
-.description-help {
-  text-align: justify;
-  color: #fff;
-  font-size: 1.7rem;
-  text-align: center;
-  margin: 5% 10%;
-}
-
-/*--------------------------------------------- Media Queries------------------------------------------------------------------ */
+/* creditos fin */
+/*--------------------------------------------- Media Queries---------------------------------------------------- */
 /* ---------------------------DISPOSITIVOS EXTRA EXTRA PEQUEÑOS "xs"--------------- */
 @media only screen and (max-width: 340.8px) {
-  /* --------------------MQ-NAV---------------- */
+  /* --------------------MQ General inicio---------------- */
   /* nav inicio */
   .header {
     height: 60px;
@@ -620,7 +634,7 @@ body {
     font-size: 1rem;
   }
 
-  /*--------------MQ-Footer--------------- */
+  /* ----- footer inicio ----- */
   .footer .colum1 .row {
     line-height: 1rem;
   }
@@ -638,6 +652,7 @@ body {
     font-size: 10px;
   }
 
+  /* titulo columna footer inicio */
   .colum-footer__title {
     font-size: 0.7rem;
     padding-bottom: 0.2rem;
@@ -646,12 +661,18 @@ body {
     font-size: 0.6rem;
   }
 
+  /* titiulo columna footer fin */
+  /* texto columna footer inicio*/
   .colum-footer__text {
     font-size: 0.45rem;
     font-weight: bold;
   }
 
+  /* texto columna footer fin */
+  /* ----- footer fin ----- */
+  /* --------------------MQ General fin ---------------- */
   /* ----------------------MQ--SOBRE-NOSOTROS inicio ------------- */
+  /* ----- sección1 sobre nosotros inicio ----- */
   .about-us-1 {
     height: 55vh;
     margin-top: 1rem;
@@ -661,6 +682,8 @@ body {
     margin: 5% 10%;
   }
 
+  /* ----- sección1 sobre nosotros fin ----- */
+  /* ----- sección2 sobre nosotros inicio ----- */
   .about-us-2 {
     height: 65vh;
   }
@@ -691,6 +714,7 @@ body {
     padding-left: 0;
   }
 
+  /*  ----- sección2 sobre nosotros fin  ----- */
   /* ----------------------MQ--SOBRE-NOSOTROS fin ------------- */
   /* ----------------------MQ--MI-CUENTA inicio------------- */
   .acct-form {
@@ -709,7 +733,7 @@ body {
 
   /* ----------------------MQ--PRODUCTOS fin------------- */
   /* ----------------------MQ--CONTACTO inicio----------- */
-  /* sección1 contacto inicio */
+  /* ----- sección1 contacto inicio ----- */
   .form {
     width: auto;
     max-width: 360px;
@@ -723,16 +747,12 @@ body {
     font-size: small;
   }
 
-  /* sección1 contacto fin */
-  /* sección2 contacto inicio */
+  /* ----- sección1 contacto fin ----- */
+  /*  ----- sección2 contacto inicio  ----- */
   .contac-banner-two {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    /* mapa inicio */
-    /* mapa fin */
-    /* mas info inicio */
-    /* mas info fin */
   }
   .contac-banner-two .map-container {
     text-align: center;
@@ -763,12 +783,12 @@ body {
     font-size: smaller;
   }
 
-  /* sección2 contacto fin */
+  /*  ----- sección2 contacto fin  ----- */
   /* ----------------------MQ--CONTACTO fin----------- */
 }
 /* -------------------DISPOSITIVOS MUY PEQUEÑOS "xs"---------------------- */
 @media only screen and (min-width: 341px) and (max-width: 521.8px) {
-  /* --------------------MQ-NAV---------------- */
+  /* --------------------MQ General inicio---------------- */
   /* nav inicio */
   .header {
     height: 60px;
@@ -820,7 +840,7 @@ body {
     font-size: 1.4rem;
   }
 
-  /* --------------MQ-Footer--------------- */
+  /* ----- footer inicio ----- */
   .footer .colum1 .row {
     line-height: 1rem;
   }
@@ -837,6 +857,7 @@ body {
     line-height: 1;
   }
 
+  /* titulo columna footer inicio */
   .colum-footer__title {
     font-size: 1rem;
     padding-bottom: 0.4rem;
@@ -845,11 +866,17 @@ body {
     font-size: 0.6rem;
   }
 
+  /* titiulo columna footer fin */
+  /* texto columna footer inicio*/
   .colum-footer__text {
     font-size: 0.7rem;
   }
 
-  /* ----------------------MQ--PRODUCTOS inicio ------------- */
+  /* texto columna footer fin */
+  /* ----- footer fin ----- */
+  /* --------------------MQ General fin---------------- */
+  /* ----------------------MQ PRODUCTOS inicio ------------- */
+  /* carta productos incio*/
   .card-product h4 {
     font-size: medium;
   }
@@ -857,8 +884,10 @@ body {
     font-size: smaller;
   }
 
-  /* ----------------------MQ--PRODUCTOS fin ------------- */
-  /* ----------------------MQ--SOBRE-NOSOTROS inicio ------------- */
+  /* carta productos fin*/
+  /* ----------------------MQ PRODUCTOS fin ------------- */
+  /* ----------------------MQ SOBRE-NOSOTROS inicio ------------- */
+  /* ----- sección1 sobre nosotros inicio ----- */
   .about-us-1 {
     height: 60vh;
     margin-top: 1rem;
@@ -868,6 +897,8 @@ body {
     margin: 5% 10%;
   }
 
+  /* ----- sección1 sobre nosotros fin ----- */
+  /* ----- sección2 sobre nosotros inicio ----- */
   .about-us-2 .h3-title--about-us {
     line-height: 3rem;
   }
@@ -886,8 +917,9 @@ body {
     padding-left: 0;
   }
 
-  /* ----------------------MQ--SOBRE-NOSOTROS fin ------------- */
-  /* ----------------------MQ--MI-CUENTA inicio------------- */
+  /*  ----- sección2 sobre nosotros fin  ----- */
+  /* ----------------------MQ SOBRE NOSOTROS fin ------------- */
+  /* ----------------------MQ MI CUENTA inicio------------- */
   /* Formulario-iniciar sesión inicio */
   .acct-form {
     width: 80vw;
@@ -895,23 +927,21 @@ body {
   }
 
   /* Formulario-iniciar sesión inicio */
-  /* ----------------------MQ--MI-CUENTA fin------------- */
-  /* ----------------------MQ--CONTACTO inicio----------- */
-  /* sección1 contacto inicio */
+  /* ----------------------MQ MI CUENTA fin------------- */
+  /* ----------------------MQ CONTACTO inicio----------- */
+  /* ----- sección1 contacto inicio ----- */
+  /* formulario contacto inicio */
   .form {
     width: auto;
     max-width: 360px;
   }
 
-  /* sección1 contacto fin */
-  /* sección2 contacto inicio */
+  /*  formulario contacto fin*/
+  /*  ----- sección1 contacto fin  ----- */
+  /*  ----- sección2 contacto inicio  ----- */
   .contac-banner-two {
     flex-direction: column;
     align-items: center;
-    /* mapa inicio */
-    /* mapa fin */
-    /* mas info inicio */
-    /* mas info fin */
   }
   .contac-banner-two .map-container {
     text-align: center;
@@ -939,12 +969,12 @@ body {
     font-size: smaller;
   }
 
-  /* sección2 contacto fin */
-  /* ----------------------MQ--CONTACTO fin----------- */
+  /*  ----- sección2 contacto fin  ----- */
+  /* ----------------------MQ CONTACTO fin----------- */
 }
 /* ------------------DISPOSITIVOS PEQUEÑOS "sm" ----------------(TELEFONOS, 576px and up) */
 @media only screen and (min-width: 522px) and (max-width: 767.98px) {
-  /* --------------------MQ-NAV---------------- */
+  /* --------------------MQ General inicio---------------- */
   /* nav inicio */
   .header {
     height: 60px;
@@ -994,11 +1024,12 @@ body {
     font-size: 1.4rem;
   }
 
-  /* --------------MQ-Footer--------------- */
+  /* ----- footer inicio ----- */
   .footer .colum1 .row--redes {
     flex-direction: column;
   }
 
+  /* titulo columna footer inicio */
   .colum-footer__title {
     font-size: 1.5rem;
     padding-bottom: 0.6rem;
@@ -1007,12 +1038,17 @@ body {
     font-size: 1rem;
   }
 
+  /* titulo columna footer fin */
+  /* texto columna footer inicio*/
   .colum-footer__text {
     font-size: 0.9rem;
   }
 
-  /* ----------------------MQ--SOBRE-NOSOTROS inicio------------- */
-  /* sobre nosotros seccion1 inicio */
+  /* texto columna footer fin*/
+  /* ----- footer fin ----- */
+  /* --------------------MQ General fin ---------------- */
+  /* ----------------------MQ SOBRE NOSOTROS inicio------------- */
+  /* ----- sección1 sobre nosotros inicio ----- */
   .about-us-1 {
     height: 50vh;
     margin-top: 2rem;
@@ -1022,8 +1058,8 @@ body {
     margin: 5% 10%;
   }
 
-  /* sobre nosotros seccion1 fin */
-  /* sobre nosotros seccion2 inicio */
+  /* ----- sección1 sobre nosotros fin ----- */
+  /* ----- sección2 sobre nosotros inicio ----- */
   .about-us-2 .about-chef {
     flex-wrap: wrap;
   }
@@ -1039,7 +1075,7 @@ body {
     padding-left: 0;
   }
 
-  /* sobre nosotros seccion2 fin */
+  /* ----- sección2 sobre nosotros fin ----- */
   /* ----------------------MQ--SOBRE-NOSOTROS fin------------- */
   /* ----------------------MQ--MI-CUENTA inicio------------- */
   /* Formulario-iniciar sesión inicio */
@@ -1051,6 +1087,7 @@ body {
   /* Formulario-iniciar sesión fin */
   /* ----------------------MQ--MI-CUENTA fin------------- */
   /* ----------------------MQ--PRODUCTOS inicio------------- */
+  /* carta productos inicio*/
   .card-product h4 {
     font-size: medium;
   }
@@ -1058,16 +1095,13 @@ body {
     font-size: smaller;
   }
 
+  /* carta productos fin*/
   /* ----------------------MQ--PRODUCTOS fin---------------- */
   /* ----------------------MQ--CONTACTO inicio----------- */
-  /* sección2 contacto inicio */
+  /*  ----- sección2 contacto inicio  ----- */
   .contac-banner-two {
     flex-direction: column;
     align-items: center;
-    /* mapa inicio */
-    /* mapa fin */
-    /* mas info inicio */
-    /* mas info inicio */
   }
   .contac-banner-two .map-container {
     text-align: center;
@@ -1091,12 +1125,12 @@ body {
     font-size: small;
   }
 
-  /* sección2 contacto fin */
+  /*  ----- sección2 contacto fin  ----- */
   /* ----------------------MQ--CONTACTO fin----------- */
 }
 /* ---------------------------------------DISPOSITIVOS MEDIANOS (TABLETS) "md" -----------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  /* --------------------MQ-NAV inicio---------------- */
+  /* -------------------- MQ General inicio ---------------- */
   /* nav inicio */
   .header {
     height: 120px;
@@ -1141,8 +1175,8 @@ body {
     font-size: 2.5rem;
   }
 
-  /* --------------------MQ-NAV fin---------------- */
-  /* --------------------MQ-Footer inicio----------------- */
+  /* ----- footer inicio ----- */
+  /* titulo columna footer inicio */
   .colum-footer__title {
     font-size: 1.8rem;
     padding-bottom: 0.8rem;
@@ -1151,12 +1185,17 @@ body {
     font-size: 1.3rem;
   }
 
+  /* titulo columna footer fin */
+  /* texto columna footer inicio*/
   .colum-footer__text {
     font-size: 1.2rem;
   }
 
-  /* --------------------MQ-Footer fin----------------- */
+  /* texto columna footer fin*/
+  /* ----- footer fin ----- */
+  /* --------------------MQ General fin ---------------- */
   /* --------------------MQ-SOBRE-NOSOTROS inicio----------- */
+  /* ----- sección1 sobre nosotros inicio ----- */
   .about-us-1 {
     height: 60vh;
     margin: 3rem 0 8rem;
@@ -1166,6 +1205,8 @@ body {
     margin: 5% 15%;
   }
 
+  /* ----- sección1 sobre nosotros fin ----- */
+  /* ----- sección2 sobre nosotros inicio ----- */
   .about-us-2 .h3-title--about-us {
     line-height: 4rem;
   }
@@ -1184,8 +1225,10 @@ body {
     padding-left: 0;
   }
 
-  /* --------------------MQ-SOBRE-NOSOTROS fin----------- */
-  /* ----------------- MQ-PRODUCTOS inicio--------------- */
+  /*  ----- sección2 sobre nosotros fin  ----- */
+  /* --------------------MQ SOBRE NOSOTROS fin----------- */
+  /* ----------------- MQ PRODUCTOS inicio--------------- */
+  /* carta productos inicio*/
   .card-product h4 {
     font-size: large;
   }
@@ -1193,16 +1236,13 @@ body {
     font-size: medium;
   }
 
-  /*------------------ MQ-PRODUCTOS fin--------------- */
-  /* ----------------------MQ--CONTACTO inicio----------- */
-  /* sección2 contacto inicio */
+  /* carta productos fin*/
+  /*------------------ MQ PRODUCTOS fin--------------- */
+  /* ----------------------MQ CONTACTO inicio----------- */
+  /*  ----- sección2 contacto inicio  ----- */
   .contac-banner-two {
     flex-direction: column;
     align-items: center;
-    /* mapa inicio */
-    /* mapa fin */
-    /* mas info inicio */
-    /* mas info fin */
   }
   .contac-banner-two .map-container {
     text-align: center;
@@ -1224,12 +1264,12 @@ body {
     font-size: larger;
   }
 
-  /* sección2 contacto fin */
+  /*  ----- sección2 contacto fin  ----- */
   /* ----------------------MQ--CONTACTO fin----------- */
 }
 /*------------------------DISPOSITIVOS GRANDES (COMPUTADORAS) "lg"--------------------- */
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-  /* --------------------MQ-GENERAL---------------- */
+  /* --------------------MQ General inicio---------------- */
   /* ------nav inicio------ */
   .header {
     height: 120px;
@@ -1275,7 +1315,8 @@ body {
     font-size: 2rem;
   }
 
-  /* footer inicio */
+  /* ----- footer inicio ----- */
+  /* titulo columna footer inicio */
   .colum-footer__title {
     padding-bottom: 0.6rem;
   }
@@ -1283,12 +1324,17 @@ body {
     font-size: 1.4rem;
   }
 
+  /* titulo columna footer fin */
+  /* texto columna footer inicio*/
   .colum-footer__text {
     font-size: 1.3rem;
   }
 
-  /* footer fin */
-  /* ----------------------MQ--SOBRE-NOSOTROS------------- */
+  /* texto columna footer fin*/
+  /* ----- footer fin ----- */
+  /* --------------------MQ General fin---------------- */
+  /* ----------------------MQ SOBRE NOSOTROS inicio------------ */
+  /* ----- sección1 sobre nosotros inicio ----- */
   .about-us-1 {
     height: 50vh;
   }
@@ -1297,6 +1343,8 @@ body {
     margin: 5% 10%;
   }
 
+  /* ----- sección1 sobre nosotros fin ----- */
+  /* ----- sección2 sobre nosotros inicio ----- */
   .about-us-2 .about-chef {
     display: flex;
     padding: 0 2rem;
@@ -1314,7 +1362,10 @@ body {
     padding-left: 0;
   }
 
-  /* ----------------------MQ--PRODUCTOS inicio------------- */
+  /*  ----- sección2 sobre nosotros fin  ----- */
+  /* ----------------------MQ SOBRE NOSOTROS fin------------ */
+  /* ----------------------MQ PRODUCTOS inicio------------- */
+  /* carta productos inicio */
   .card-product h4 {
     font-size: large;
   }
@@ -1322,8 +1373,9 @@ body {
     font-size: medium;
   }
 
-  /* ----------------------MQ--PRODUCTOS fin------------- */
-  /* ----------------------MQ--CONTACTO inicio------------- */
+  /* carta productos fin */
+  /* ----------------------MQ PRODUCTOS fin------------- */
+  /* ----------------------MQ CONTACTO inicio------------- */
   /* sección2 contacto inicio */
   .contac-banner-two .map-container .map {
     height: 380px;
@@ -1331,11 +1383,11 @@ body {
   }
 
   /* sección2 contacto fin */
-  /* ----------------------MQ--CONTACTO fin------------- */
+  /* ----------------------MQ CONTACTO fin------------- */
 }
 /*--------------------------------DISPOSITIVOS EXTRAGRANDES (COMPUTADORAS GRANDES) "xl"---------------- */
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
-  /* --------------------------MQ-NAV----------------------------------------------------------- */
+  /* --------------------MQ General inicio---------------- */
   /* nav inicio */
   .header {
     height: 150px;
@@ -1352,7 +1404,9 @@ body {
 
   /* enlaces fin */
   /* nav fin */
+  /* --------------------MQ General fin---------------- */
   /* ----------------------MQ--PRODUCTOS inicio------------- */
+  /* carta productos inicio*/
   .card-product h4 {
     font-size: x-large;
   }
@@ -1360,11 +1414,12 @@ body {
     font-size: large;
   }
 
+  /* carta productos fin*/
   /* ----------------------MQ--PRODUCTOS fin------------- */
 }
 /*----------------DISPOSITIVOS EXTRA EXTRA GRANDES (COMPUTADORAS MAS GRANDES) "xxl"--------------------------------------*/
 @media only screen and (min-width: 1400px) {
-  /* --------------------------MQ-NAV inicio----------------------------------------------------------- */
+  /* --------------------MQ General inicio---------------- */
   /* nav inicio */
   .header {
     height: 160px;
@@ -1377,12 +1432,14 @@ body {
 
   /* enlaces fin */
   /* nav fin */
-  /* --------------------------MQ-NAV fin----------------------------------------------------------- */
+  /* --------------------MQ General fin---------------- */
   /* ----------------------MQ--PRODUCTOS inicio------------- */
+  /* carta productos inicio*/
   .card-product p {
     font-size: large;
   }
 
+  /* carta productos fin*/
   /* ----------------------MQ--PRODUCTOS fin------------- */
 }
 
