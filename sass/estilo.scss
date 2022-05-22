@@ -39,7 +39,7 @@ body {
 /* nav inicio */
 
 .header {
-    @include sizes(135px, 100%);
+    @include sizes(auto, 100%);
     position: sticky;
     top: 0;
     left: 0;
@@ -237,11 +237,28 @@ body {
         .row {
             list-style: none;
             line-height: 2rem;
+
+            .colum-footer__text {
+                &:hover {
+                    color: #fff;
+                    text-decoration: none;
+                    text-shadow: 0 0 7px #000;
+                    filter: drop-shadow(0 0 7px #000);
+                }
+            }
+            
         }
 
         .icon-contac--foot {
             line-height: 2;
             text-shadow: 0px 0px 7px #eee, 0px 0px 7px #eee;
+            
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+                text-shadow: 0 0 7px #000;
+                filter: drop-shadow(0 0 7px #000);
+            }
         }
     }
 
@@ -428,7 +445,7 @@ body {
 /* ----- sección1 sobre nosotros inicio ----- */
 
 .about-us-1 {
-    @include sizes(55vh, 100%);
+    @include sizes(auto, 100%);
     margin-top: 5rem;
 
     .txt-pink {
@@ -449,7 +466,7 @@ body {
 /* ----- sección2 sobre nosotros inicio ----- */
 
 .about-us-2 {
-    @include sizes(100vh, 100%);
+    @include sizes(auto, 100%);
 
     .h3-title--about-us {
         line-height: 2rem;
@@ -743,8 +760,15 @@ body {
 
     /* --------------------MQ General inicio---------------- */
     /* nav inicio */
-    .header {
-        height: 60px;
+
+    .navbar-nav {
+        .nav__menu-link--active {
+            font-size: small;
+        }
+    
+        .nav__menu-link--mdf {
+            font-size: small;
+        }
     }
 
     .container-logo {
@@ -867,7 +891,7 @@ body {
     /* ----- sección1 sobre nosotros inicio ----- */
 
     .about-us-1 {
-        height: 55vh;
+        height: auto;
         margin-top: 1rem;
 
         .description-1 {
@@ -881,7 +905,7 @@ body {
     /* ----- sección2 sobre nosotros inicio ----- */
 
     .about-us-2 {
-        height: 65vh;
+        height: auto;
 
         .h3-title--about-us {
             line-height: 2;
@@ -1022,8 +1046,14 @@ body {
 
     /* nav inicio */
 
-    .header {
-        height: 60px;
+    .navbar-nav {
+        .nav__menu-link--active {
+            font-size: small;
+        }
+    
+        .nav__menu-link--mdf {
+            font-size: small;
+        }
     }
 
     .container-logo {
@@ -1166,7 +1196,7 @@ body {
     /* ----- sección1 sobre nosotros inicio ----- */
 
     .about-us-1 {
-        height: 60vh;
+        height: auto;
         margin-top: 1rem;
 
         .description-1 {
@@ -1180,6 +1210,7 @@ body {
     /* ----- sección2 sobre nosotros inicio ----- */
 
     .about-us-2 {
+        height: auto;
 
         .h3-title--about-us {
             line-height: 3rem;
@@ -1294,10 +1325,6 @@ body {
 
     /* nav inicio */
 
-    .header {
-        height: 60px;
-    }
-
     .container-logo {
         @include sizes(100px, 100px);
     }
@@ -1385,7 +1412,7 @@ body {
     /* ----- sección1 sobre nosotros inicio ----- */
 
     .about-us-1 {
-        height: 50vh;
+        height: auto;
         margin-top: 2rem;
 
         .description-1 {
@@ -1399,6 +1426,7 @@ body {
     /* ----- sección2 sobre nosotros inicio ----- */
 
     .about-us-2 {
+        height: auto;
         .about-chef {
             flex-wrap: wrap;
 
@@ -1507,10 +1535,6 @@ body {
 
     /* nav inicio */
 
-    .header {
-        height: 120px;
-    }
-
     .container-logo {
         @include sizes(135px, 135px);
     }
@@ -1585,7 +1609,7 @@ body {
     /* ----- sección1 sobre nosotros inicio ----- */
 
     .about-us-1 {
-        height: 60vh;
+        height: auto;
         margin: 3rem 0 8rem;
 
         .description-1 {
@@ -1599,6 +1623,7 @@ body {
     /* ----- sección2 sobre nosotros inicio ----- */
 
     .about-us-2 {
+        height: auto;
 
         .h3-title--about-us {
             line-height: 4rem;
@@ -1697,10 +1722,6 @@ body {
     /* --------------------MQ General inicio---------------- */
 
     /* ------nav inicio------ */
-    .header {
-        height: 120px;
-    }
-
     .container-logo {
         @include sizes(140px, 140px);
     }
@@ -1779,7 +1800,7 @@ body {
     /* ----- sección1 sobre nosotros inicio ----- */
 
     .about-us-1 {
-        height: 50vh;
+        height: auto;
 
         .description-1 {
             font-size: 1rem;
@@ -1792,6 +1813,8 @@ body {
     /* ----- sección2 sobre nosotros inicio ----- */
 
     .about-us-2 {
+        height: auto;
+
         .about-chef {
             display: flex;
             padding: 0 2rem;
@@ -1859,10 +1882,6 @@ body {
 
     /* nav inicio */
 
-    .header {
-        height: 150px;
-    }
-
     .container-logo {
         width: 19%;
     }
@@ -1905,10 +1924,6 @@ body {
 
     /* nav inicio */
 
-    .header {
-        height: 160px;
-    }
-
     /* enlaces inicio */
 
     .nav-item a {
@@ -1920,6 +1935,29 @@ body {
     /* nav fin */
 
     /* --------------------MQ General fin---------------- */
+    /* ----------------------MQ SOBRE NOSOTROS inicio------------ */
+
+    /* ----- sección1 sobre nosotros inicio ----- */
+
+    .about-us-1 {
+        height: auto;
+    }
+
+    /* ----- sección1 sobre nosotros fin ----- */
+
+    /* ----- sección2 sobre nosotros inicio ----- */
+
+    .about-us-2 {
+        height: auto;
+
+        .about-chef {
+            margin-bottom: 2rem;
+        }
+    }
+
+    /*  ----- sección2 sobre nosotros fin  ----- */
+
+    /* ----------------------MQ SOBRE NOSOTROS fin------------ */
 
     /* ----------------------MQ--PRODUCTOS inicio------------- */
 
@@ -1935,3 +1973,5 @@ body {
 
     /* ----------------------MQ--PRODUCTOS fin------------- */
 }
+
+
