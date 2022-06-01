@@ -16,6 +16,8 @@ body {
   top: 0;
   left: 0;
   z-index: 100000000;
+  background-image: url(/images/background/bg-header.svg);
+  background-repeat: no-repeat;
 }
 
 .navbar-nav {
@@ -111,7 +113,8 @@ body {
   line-height: 2em;
   font-size: 4.5em;
   color: #000;
-  background-image: url(../images/background/low-poly-grid-haikei.svg);
+  background-image: url(../images/background/blurry-gradient-haikei.svg);
+  background-repeat: no-repeat;
   background-color: #FF00FF;
   text-shadow: 0px 0px 7px #fff;
   font-weight: bold;
@@ -138,7 +141,8 @@ body {
   height: 25vh;
   width: 100%;
   display: flex;
-  background-image: url(../images/background/low-poly-grid-haikei.svg);
+  background-image: url(../images/background/blurry-gradient-haikei.svg);
+  background-repeat: no-repeat;
   background-color: #FF00FF;
   justify-content: space-between;
   padding: 2% 7% 0 7%;
@@ -268,7 +272,7 @@ body {
 /* ---------- Sección2 index inicio---------- */
 /* galeria index inicio */
 .img-container {
-  height: 60vh;
+  height: auto;
   width: 100%;
   text-align: center;
   cursor: pointer;
@@ -291,20 +295,21 @@ body {
 .img-container .img-item {
   max-height: 250px;
   max-width: 250px;
+  padding: 10px;
+  overflow: hidden;
 }
 .img-container .img-item .img {
   height: 100%;
   width: 100%;
   border-radius: 20px;
-  padding: 10px;
   object-fit: cover;
-  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.144), 0 1px 3px rgba(255, 253, 253, 0.24), 0 1.7px 2px rgba(255, 253, 253, 0.664);
+  transition: 1s;
 }
 .img-container .img-item .img:hover {
-  filter: blur(1.2px) brightness(1.3) grayscale(100);
-  transition: all 1 ease;
-  filter: hue-rotate(300deg);
-  transform: scale(1.2);
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px 7px #FF00FF;
+  transform: scale(0.9);
+  transition: 1s;
 }
 
 /* galeria index fin */
@@ -316,15 +321,20 @@ body {
   width: 100%;
   padding-top: 3rem;
 }
+.card-product:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
 .card-product img {
   width: max-content;
   height: 70%;
   object-fit: cover;
   border-radius: 7px;
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.144), 0 1px 3px rgba(255, 253, 253, 0.24), 0 1.7px 2px rgba(255, 253, 253, 0.664), 0 1.7px 2px rgba(255, 253, 253, 0.87);
+  transition: 0.5s;
 }
 .card-product img:hover {
-  transform: scale(1.2);
+  box-shadow: 0px 0px 7px 7px #E81C9A;
   transition: 0.5s;
 }
 .card-product h4 {
