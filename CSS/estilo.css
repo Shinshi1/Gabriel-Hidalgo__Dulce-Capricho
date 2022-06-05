@@ -238,6 +238,14 @@ body {
 
 /* ----- footer fin ----- */
 /* -------------------------INDEX----------------------------- */
+.bg-index {
+  background-image: url(../images/background/index.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* Index Titulos inicio*/
 .h2-title--index {
   line-height: 2;
@@ -293,15 +301,15 @@ body {
   background: #444;
 }
 .img-container .img-item {
-  max-height: 250px;
-  max-width: 250px;
+  height: 250px;
+  width: 250px;
   padding: 10px;
   overflow: hidden;
 }
 .img-container .img-item .img {
   height: 100%;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   object-fit: cover;
   transition: 1s;
 }
@@ -315,6 +323,14 @@ body {
 /* galeria index fin */
 /* ---------- sección2 index fin---------- */
 /* ------------------------Productos------------------------------ */
+.bg-productos {
+  background-image: url(../images/background/productos.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* carta productos inicio*/
 .card-product {
   height: 100%;
@@ -354,6 +370,14 @@ body {
 
 /* carta productos fin*/
 /* ------------------------Sobre-Nosotros------------------------- */
+.bg-us {
+  background-image: url(../images/background/olas-us.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* ----- sección1 sobre nosotros inicio ----- */
 .about-us-1 {
   height: auto;
@@ -408,6 +432,13 @@ body {
 
 /*  ----- sección2 sobre nosotros fin  ----- */
 /* ------------------------Mi-Cuenta------------------------------ */
+.bg-acount {
+  background-image: url(../images/background/stacked-waves-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* Formulario-iniciar sesión inicio */
 .acct-form {
   height: auto;
@@ -465,6 +496,14 @@ body {
 }
 
 /* -------------------------Contacto------------------------------*/
+.bg-contacto {
+  background-image: url(../images/background/contacto.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* ----- sección1 contacto inicio ----- */
 /* formulario contacto inicio */
 .form {
